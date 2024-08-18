@@ -1,0 +1,86 @@
+{
+  "header": {
+    "nav": {
+      "Home": "Home",
+      "Services": "Services",
+      "Cases": "Cases",
+      "Team": "Team",
+      "Reviews": "Reviews",
+      "Contact": "Contact",
+      "Guides": "Guides"
+    },
+    "themes": {
+      "white": "Light",
+      "dark": "Dark"
+    }
+  },
+  "homepage": {
+    "SoftwareAndBlockchain": "Software and Blockchain",
+    "development": "development",
+    "ContactUs": "Contact Us",
+    "technologies": "technologies",
+    "clients": "clients",
+    "projects": "projects",
+    "Services": "Services",
+    "Blockchain": "Blockchain & IT Consultancy",
+    "Decentralized": "Decentralized Application Development",
+    "Fullstack": "Fullstack Software development",
+    "Smart": "Smart Contract Development",
+    "MVP": "MVP Development",
+    "BackEnd": "Back-end Development",
+    "NFT": "NFT Project Development",
+    "Cloud": "Cloud (serverless) solutions",
+    "FrontEnd": "Front-end Development",
+    "Cases": "Cases",
+    "AllCases": "All 5+ cases",
+    "MASDMarketplace": "MASD Marketplace",
+    "MASDMarketplaceText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they",
+    "GameDesignDevelopment": "Game design & Development",
+    "GameDesignDevelopmentText": "Developing a BSC game in which players earn from the sale of in-game assets and developers receive a commission from each transaction, thus creating a 'win-win' scenario.",
+    "GameDesignDevelopmentText2": "A unique crypto project: the client gets a printer that prints dollars. The more tokens put into it, the more it prints. The resulting money can be exchanged inside the game for various perks. The project was done using react.js on the front-end and node.js on the back-end. The database we used was PostgreSQL. Solidity was used to write smart contracts.",
+    "WebDevelopment": "Web Development",
+    "WebDevelopmentText": "ManusCRYPT is a marketplace where various NFTs are posted and users can purchase them at an appropriate price. Each NFT is described and detailed on the site.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was MongoDB. Solidity was used to create smart contracts.",
+    "OurTechnology": {
+      "title": "Our Technology",
+      "Blockchain": "Blockchain",
+      "BlockchainText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
+      "FrontEnd": "Front-End",
+      "FrontEndText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
+      "BackEnd": "Back-End",
+      "BackEndText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
+      "Cloud": "Cloud",
+      "CloudText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity."
+    },
+    "Team": {
+      "title": "Team",
+      "MykhailoAdzhoieve": "Mykhailo Adzhoieve",
+      "AleksandreaKharchenko": "Aleksandrea Kharchenko",
+      "BohdanSolomakha": "Bohdan Solomakha",
+      "ViacheslavIvchenko": "Viacheslav Ivchenko",
+      "JuriErmakov": "Juri Ermakov",
+      "VladyslavFit": "Vladyslav Fit"
+    },
+    "Revives": {
+      "title": "Revives",
+      "Great_developer": "Great developer. I highly recommend his service to others.",
+      "Avalanche": "Avalanche (AVAX) Game-Fi Project, Fullstack blockchain Development",
+      "Artem_is_a": "Artem is a very professional and nice person to work with. I really enjoyed working with him. Thanks...",
+      "Traveldise": "Traveldise, Project Manager",
+      "Mykhailo_is": "Mykhailo is a high-level specialist that has deep knowledge in blockchain as well as proven expertise in .NET development. He understands requirements clearly and can assist in system architecture development. Would recommend to anyone!",
+      "Etherium_Blockchain": "Etherium Blockchain and .net Consultant, Senior Developer"
+    },
+    "Footer": {
+      "ContactUs": "Contact Us",
+      "ChatUsOnBlockchain": "Chat us on Blockchain",
+      "Copied": "Copied"
+    }
+  },
+  "videoGuides": {
+    "cards": {
+      "card1": {
+        "title": "Our Technologys",
+        "description": "Blockchain, React.js, Node.js, MongoDB, Solidity"
+      }
+    }
+  }
+}

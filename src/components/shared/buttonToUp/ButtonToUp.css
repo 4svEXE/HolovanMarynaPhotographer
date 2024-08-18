@@ -1,0 +1,23 @@
+.button-to-up {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 30;
+  opacity: 1;
+}
+.button-to-up .primotyButton{
+ padding: 20px;
+ border-radius: 50%;
+ transition: .3s;
+ font-size: 20px;
+}
+.button-to-up .primotyButton:hover{
+    transform: scale(1.2)
+}
+.button-to-up .primotyButton:hover:before{
+    position: relative;
+}
+
+.button-to-up .hidden-btn{
+    opacity: 0;
+}

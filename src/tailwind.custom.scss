@@ -1,0 +1,61 @@
+:is(.dark .dark\:bg-dark-gray) {
+  --tw-bg-opacity: 1;
+  background-color: #151515;
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: #c736ef;
+}
+:is(.dark .dark\:color-purple) {
+  --tw-bg-opacity: 1;
+  color: #c736ef;
+}
+:is(.dark .dark\:bg-purple-gradient) {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(68, 7, 85, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.bg-purple-gradient {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(68, 7, 85, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+@media (max-width: 1024px) {
+  .md\:bg-purple-gradient {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(68, 7, 85, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 150, 243, 0) 0%,
+    rgba(33, 150, 243, 0.1) 5%,
+    rgba(33, 150, 243, 0.3) 10%,
+    rgba(33, 150, 243, 0.99) 100%
+  );
+}
+.bg-purple-dark {
+  background-color: #740693;
+}
+:is(.dark .dark\.bg-purple-grad) {
+  background: radial-gradient(
+    130.67% 126.29% at 111.47% -8.76%,
+    rgba(199, 54, 239, 0.22) 0%,
+    rgba(116, 6, 147, 0.62) 100%
+  );
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}

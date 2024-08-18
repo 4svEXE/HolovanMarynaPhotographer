@@ -1,0 +1,43 @@
+.Cowchain {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.irst-screen-logo {
+  margin-top: 124px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  letter-spacing: -0.25px;
+}
+
+.CowchainLogo {
+  width: 100%;
+  overflow: hidden;
+}
+.CowchainLogo a {
+  transform: scale(1);
+  padding: 40px 150px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.CowchainLogo a.active {
+  transform: scale(2.8);
+  padding: 40px 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .CowchainLogo a {
+    padding: 40px 100px;
+  }
+  .CowchainLogo a.active {
+    transform: scale(1.9);
+    padding: 40px 100px;
+  }
+}

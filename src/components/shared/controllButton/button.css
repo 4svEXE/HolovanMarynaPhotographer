@@ -1,0 +1,29 @@
+.controll-button {
+  width: 44px;
+  height: 44px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+
+  .control {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+#animated {
+  transform: rotate(-90deg);
+}
+
+#progress {
+  transition: stroke-dasharray 0.5s ease-in-out;
+}

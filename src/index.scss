@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "scss/variables";
+@import "scss/wrappers";
+@import "scss/typography";
+@import "scss/helpers";
+@import "scss/scrollbar";
+@import "scss/forms";
+
+@layer base {
+  body {
+    min-height: 100vh;
+  }
+}

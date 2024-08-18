@@ -1,0 +1,96 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 8px;
+  isolation: isolate;
+  width: 200px;
+  height: 358px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  .cart {
+    padding: 0;
+    width: 100%;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .bgGrad {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background: linear-gradient(
+      180deg,
+      rgba(159, 39, 192, 0.5) 0%,
+      rgba(159, 39, 192, 0.7) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
+  strong {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    padding-bottom: 14px;
+  }
+  a {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    letter-spacing: 0.25px;
+  }
+  .link {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: width 0.3s;
+  }
+  .link:hover::after {
+    width: 100%;
+  }
+}

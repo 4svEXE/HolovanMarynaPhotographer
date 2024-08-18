@@ -1,0 +1,21 @@
+.service-item {
+  img {
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4px);
+    border-radius: 21px;
+  }
+}
+.service-item {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 28px;
+}
+.service-item span {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}

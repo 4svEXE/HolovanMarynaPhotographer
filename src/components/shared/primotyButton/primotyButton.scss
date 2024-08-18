@@ -1,0 +1,61 @@
+.primotyButton {
+  padding: 13px 63px;
+  width: max-content;
+  min-height: 46px;
+  background: rgba(1, 1, 1, 0);
+  border: 3px solid #7c06d8;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+.primotyButton:hover,
+.primotyButton.active {
+  background: #7c06d8;
+  box-shadow: rgba(177, 183, 232, 0.1) 0px 4px 16px,
+    rgba(193, 193, 223, 0.1) 0px 8px 24px,
+    rgba(232, 232, 248, 0.1) 0px 16px 56px;
+  animation: shadow 1s linear infinite;
+}
+
+.primotyButton.active:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(264.17deg, #7c06d8 1.95%, #9c07c6 101.96%);
+  opacity: 0;
+  border-radius: 8px;
+  animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+@keyframes shadow {
+  0% {
+    box-shadow: rgba(177, 183, 232, 0.1) 0px 4px 16px,
+      rgba(193, 193, 223, 0.1) 0px 8px 24px,
+      rgba(232, 232, 248, 0.1) 0px 16px 56px;
+  }
+  50% {
+    box-shadow: rgba(234, 234, 240, 0.1) 0px 1px 4px,
+      rgba(247, 247, 255, 0.1) 0px 2px 2px, rgba(185, 185, 208, 0.1) 0px 4px 6px;
+  }
+  100% {
+    box-shadow: rgba(177, 183, 232, 0.1) 0px 4px 16px,
+      rgba(193, 193, 223, 0.1) 0px 8px 24px,
+      rgba(232, 232, 248, 0.1) 0px 16px 56px;
+  }
+}
