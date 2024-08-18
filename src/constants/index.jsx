@@ -15,27 +15,29 @@ export const LANGUAGES = [
 
 export const NAVIGATION = [
   {
-    path: "/#services",
+    path: "#services",
     title: "Services",
   },
   {
-    path: "/#cases",
+    path: "#cases",
     title: "Cases",
   },
   {
-    path: "/#team",
+    path: "#team",
     title: "Team",
   },
   {
-    path: "/#reviews",
+    path: "#reviews",
     title: "Reviews",
   },
   {
-    path: "/#contact",
+    path: "#contact",
     title: "Contact",
   },
-  {
-    path: "/video-guides",
-    title: "Guides",
-  },
 ];
+
+
+// dev
+export const baseHrefPrefix = ''
+// deploy
+// export const baseHrefPrefix = 'HolovanMarynaPhotographer'

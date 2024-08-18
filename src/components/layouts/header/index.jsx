@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Button from "components/shared/buttonToUp/button";
 import localesHelper from "helpers/localesHelper";
-import { LANGUAGES, NAVIGATION } from "constants";
+import { LANGUAGES, NAVIGATION, baseHrefPrefix } from "constants";
 
 import logo from "/img/logo.svg";
 import "./header.scss";
@@ -87,7 +87,7 @@ export default function Header() {
               <li key={n.title + "_li"}>
                 <a
                   key={n.title}
-                  href={n.path}
+                  href={baseHrefPrefix + n.path}
                   onClick={() => setIsNavOpen((prev) => !prev)}
                   className="text-md text-black font-semibold leading-6 dark:before:bg-white dark:text-white header-nav"
                 >
@@ -155,7 +155,7 @@ export default function Header() {
                   <li key={n.title + "_nav_li"} className="p-10">
                     <a
                       key={n.title + "_nav"}
-                      href={n.path}
+                      href={baseHrefPrefix + n.path}
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       className="text-md text-black font-semibold leading-6 dark:before:bg-white dark:text-white header-nav"
                     >

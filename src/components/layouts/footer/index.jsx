@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { NAVIGATION } from "constants";
+import { NAVIGATION, baseHrefPrefix } from "constants";
 
 import logo from "/img/logo.svg";
 import ContactForm from "./ContactForm";
@@ -8,6 +8,7 @@ import ContactForm from "./ContactForm";
 export default function Footer() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  
 
   const linkNav = (e, path) => {
     e.preventDefault();
@@ -44,7 +45,7 @@ export default function Footer() {
             {NAVIGATION.map((n) => (
               <a
                 key={n.title}
-                href={n.path}
+                href={baseHrefPrefix + n.path}
                 className="text-md m-4 font-semibold leading-6 dark:before:bg-white dark:text-white header-nav"
               >
                 {t([`header.nav.${n.title}`, n.title])}
