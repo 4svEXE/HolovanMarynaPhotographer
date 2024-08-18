@@ -10,7 +10,7 @@ function Cases() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex pt-40 flex-col h-max items-center text-white bg-black py-8 dark:bg-opacity-75">
+    <section className="flex pt-40 flex-col h-max items-center text-white bg-black py-8 dark:bg-opacity-75">
       <div className="container w-100 flex justify-between items-center pb-12">
         <h2>{t([`homepage.Cases`])}</h2>
         <a href="/cases" className={styles.link}>
@@ -87,7 +87,7 @@ function Cases() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

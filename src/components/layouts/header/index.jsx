@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import Button from "components/shared/buttonToUp/button";
 import localesHelper from "helpers/localesHelper";
@@ -85,14 +86,15 @@ export default function Header() {
           <ul className="desktop-nav hidden space-x-8 lg:flex items-center">
             {NAVIGATION.map((n) => (
               <li key={n.title + "_li"}>
-                <a
+                <HashLink
                   key={n.title}
-                  href={baseHrefPrefix + n.path}
+                  smooth
+                  to={`#${n.path}`}
                   onClick={() => setIsNavOpen((prev) => !prev)}
                   className="text-md text-black font-semibold leading-6 dark:before:bg-white dark:text-white header-nav"
                 >
                   {t([`header.nav.${n.title}`, n.title])}
-                </a>
+                </HashLink>
               </li>
             ))}
 
@@ -117,7 +119,7 @@ export default function Header() {
               className="HAMBURGER-ICON space-y-2"
               onClick={() =>
                 setIsNavOpen((prev) => !prev, setDocumentScrolling(false))
-              } // toggle isNavOpen state on click
+              }
             >
               <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
               <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -135,7 +137,7 @@ export default function Header() {
                 className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
                 onClick={() => {
                   setIsNavOpen(false), setDocumentScrolling(true);
-                }} // change isNavOpen state to false to close the menu
+                }}
               >
                 <svg
                   className="h-8 w-8 text-gray-600 dark:text-white"
@@ -153,22 +155,23 @@ export default function Header() {
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 {NAVIGATION.map((n) => (
                   <li key={n.title + "_nav_li"} className="p-10">
-                    <a
+                    <HashLink
                       key={n.title + "_nav"}
-                      href={baseHrefPrefix + n.path}
+                      smooth
+                      to={`#${n.path}`}
                       onClick={() => setIsNavOpen((prev) => !prev)}
                       className="text-md text-black font-semibold leading-6 dark:before:bg-white dark:text-white header-nav"
                     >
                       {t([`header.nav.${n.title}`, n.title])}
-                    </a>
+                    </HashLink>
                   </li>
                 ))}
 
                 <div className="controls flex flex-col items-center">
                   <div className=" lg:flex lg:justify-end">
                     <Button
-                      title={language === "en" ? <>UA</> : <>EN</>}
-                      onClick={localesHelper.toggleLanguage}
+                      title={language}
+                      onClick={() => localesHelper.setLAnguage(language)}
                     />
                   </div>
                 </div>

@@ -12,20 +12,35 @@ export default function HomePage() {
     <div className="w-full flex-col content-center items-center justify-center bg-white dark:bg-editor-dark">
       <Helmet>
         <title>Holovan Maryna the Photographer in Liberec</title>
-        <link rel="canonical" href="https://4svEXE.github.io/HolovanMarynaPhotographer" />
+        <link
+          rel="canonical"
+          href="https://4svEXE.github.io/HolovanMarynaPhotographer"
+        />
       </Helmet>
 
       <Cowchain />
 
-      <Services id="services" />
+      <div id="services">
+        <Services />
+      </div>
 
-      <Cases id="cases" />
+      <div id="cases">
+        <Cases />
+      </div>
 
-      <OurTechnology id="ourTechnology" />
+      <div id="ourTecnology">
+        <OurTechnology />
+      </div>
 
-      <Team id="team" />
+      <div id="team">
+        <Team />
+      </div>
 
-      <Revives id="reviews" />
+      <div id="reviews">
+        <Revives />
+      </div>
+
+      <div id="contact"></div>
     </div>
   );
 }
