@@ -1,0 +1,23 @@
+.mobileMenuBtn{
+    width: 28px;
+    height: 28px;
+}
+
+.header{
+    background-color: slategrey;
+    padding-left: 15px;
+    padding-right: 15px;  
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width:1400px){
+    .header{
+        padding-left: 78px;
+        padding-right: 78px;
+    }
+}
+
+.mediumScreenNav{
+    gap: 70px;
+}

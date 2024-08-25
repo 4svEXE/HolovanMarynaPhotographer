@@ -2,15 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "scss/variables";
-@import "scss/wrappers";
-@import "scss/typography";
-@import "scss/helpers";
-@import "scss/scrollbar";
-@import "scss/forms";
+* {
+  box-sizing: border-box;
+}
 
-@layer base {
-  body {
-    min-height: 100vh;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1400px;
+
+body {
+  font-family: Manrope, sans-serif;
+}
+
+.container {
+  width: 340px;
+  margin: 0 auto;
+  max-width: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .container {
+    width: 704px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .container {
+    width: 1243px;
+  }
+}
+
+.section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// @layer base {
+//   body {
+//     min-height: 100vh;
+
+//   }
+// }

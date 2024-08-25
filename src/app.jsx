@@ -1,12 +1,11 @@
 import { Suspense } from "react";
-import Routes from "pages/routes";
+import { Routes,Route } from "react-router-dom";
+import Layout from "Components/Layout/Layout";
 
-export default function App({ toggleTheme }) {
+export default function App() {
   return (
     <>
-      <Suspense fallback={<>loading...</>}>
-        <Routes />
-      </Suspense>
+    <Layout></Layout>
     </>
   );
 }

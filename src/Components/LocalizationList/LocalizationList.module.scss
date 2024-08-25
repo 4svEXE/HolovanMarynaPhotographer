@@ -1,0 +1,21 @@
+.localesList {
+  display: flex;
+  gap: 15px;
+
+  li {
+    position: relative;
+    height: 24px;
+  }
+}
+
+.checked::after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  background-color: #000000;
+}
