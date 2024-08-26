@@ -3,6 +3,7 @@ import MobileMenuNav from "Components/MobileMenuNav/MobileMenuNav";
 import SocialsList from "Components/SocialsList/SocialsList";
 import Icon from "Components/Icon/Icon";
 import css from "./MobileMenu.module.scss";
+import PropTypes from 'prop-types';
 
 const MobileMenu = ({ closeModal, modalIsOpen }) => {
   const handleCloseModal = () => {
@@ -27,5 +28,10 @@ const MobileMenu = ({ closeModal, modalIsOpen }) => {
     </div>
   );
 };
+
+MobileMenu.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+  modalIsOpen: PropTypes.bool.isRequired
+}
 
 export default MobileMenu;

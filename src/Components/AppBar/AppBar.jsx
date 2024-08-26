@@ -40,7 +40,7 @@ const AppBar = () => {
         </button>
 
         <div className={`hidden md:flex items-center  ${css.mediumScreenNav} `}>
-          <Navigation nav={`ssm:hidden md:block`} navList={"flex gap-4"}/>
+          <Navigation nav={`ssm:hidden md:block`} navList={""}/>
 
           <LocalizationList style={"flex gap-4"} />
         </div>
