@@ -1,6 +1,4 @@
 .navList{
-    display: flex;
-    gap: 16px;
 
     li{
         font-family: Inter;
@@ -19,5 +17,9 @@
         border-color: #000000;
         box-sizing: border-box;
         border-radius: 40px;
+    }
+
+    li.bold{
+        font-weight: bold;
     }
 }

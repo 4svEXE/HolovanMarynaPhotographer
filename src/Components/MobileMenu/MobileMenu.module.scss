@@ -1,0 +1,24 @@
+.mobileMenu{
+    position: fixed;
+    right: 0px;
+    top: 0px;    
+    transform: translateX(100%);
+
+    width: 343px;
+    height: 100%;
+    padding: 50px 61px;
+    z-index: 500;
+
+    background-color: rgb(247, 242, 239);
+}
+
+.mobileMenu.isOpen{
+    transition: transform,300ms,ease-in-out;
+    transform: translateX(0%);
+}
+
+.closeBtn{
+    position: absolute;
+    top: 55px;
+    right: 21px;
+}
