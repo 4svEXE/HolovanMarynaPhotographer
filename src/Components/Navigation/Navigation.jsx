@@ -1,25 +1,16 @@
-import { useLocation, useParams } from "react-router-dom";
 import css from "./Navigation.module.scss";
-import PropTypes from "prop-types";
 
-const Navigation = ({ nav, navList }) => {
-  const params = useParams();
-  
-  console.log(params);
+const Navigation = () => {
   return (
-    <nav className={nav}>
-      <ul className={`${navList} ${css.navList}`}>
+    <nav className={""}>
+      <ul className={`${css.navList} flex flex-col`}>
         <li className={css.checked}>Про мене</li>
-        <li className={css.bold}>Портфоліо</li>
+        <li>Портфоліо</li>
         <li>Контакти</li>
       </ul>
     </nav>
   );
 };
 
-Navigation.propTypes = {
-  nav: PropTypes.string,
-  navList: PropTypes.string.isRequired,
-};
 
 export default Navigation;

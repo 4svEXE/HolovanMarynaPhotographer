@@ -1,5 +1,5 @@
 import LocalizationList from "Components/LocalizationList/LocalizationList";
-import Navigation from "Components/Navigation/Navigation";
+import MobileMenuNav from "Components/MobileMenuNav/MobileMenuNav";
 import SocialsList from "Components/SocialsList/SocialsList";
 import Icon from "Components/Icon/Icon";
 import css from "./MobileMenu.module.scss";
@@ -21,7 +21,7 @@ const MobileMenu = ({ closeModal, modalIsOpen }) => {
           />
         </button>
         <LocalizationList style={"flex gap-4 mb-32"} />
-        <Navigation navList={"flex flex-col mb-40"} />
+        <MobileMenuNav></MobileMenuNav>
         <SocialsList />
       </div>
     </div>
