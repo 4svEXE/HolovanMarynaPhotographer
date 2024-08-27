@@ -6,19 +6,30 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 $tablet-breakpoint: 768px;
 $small-desktop-breakpoint: 1200px;
 $desktop-breakpoint: 1400px;
 
 body {
   font-family: Manrope, sans-serif;
-  background-color:rgb(221, 230, 237) ;
+  background-color: rgb(221, 230, 237);
 }
 
 .container {
   width: 340px;
   margin: 0 auto;
   max-width: none;
+}
+
+.section{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -33,16 +44,10 @@ body {
   }
 }
 
-
 @media (min-width: $desktop-breakpoint) {
   .container {
     width: 1243px;
   }
-}
-
-.section {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 // @layer base {
