@@ -9,7 +9,7 @@ localesHelper.toggleLanguage = () => {
     : i18next.changeLanguage("en");
 };
 
-localesHelper.setLAnguage = (language) => {
+localesHelper.setLanguage = (language) => {
   i18next.changeLanguage(language)
   window.localStorage.setItem("i18nextLng", language);
 };
