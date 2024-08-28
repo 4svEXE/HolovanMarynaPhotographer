@@ -1,19 +1,30 @@
-import css from './LocalizationList.module.scss';
-import PropTypes from 'prop-types';
+import { useState, useEffect } from "react";
+import css from "./LocalizationList.module.scss";
+import i18next from "i18next";
+import { LANGUAGES } from "../../constants/index";
 
-const LocalizationList = ({style}) => {
-    return (
-        <ul className={`${css.localesList} ${style}`}>
-            {/* <select name="" id=""></select> */}
-            <li className={css.checked}>UA</li>
-            <li>EN</li>
-            <li>CZ</li>
-        </ul>
-    )
+const LocalizationList = ({ style }) => {
+  const [currentLang, setCurrentLang] = useState(i18next.language);
+
+  useEffect(() => {
+    const handleLanguageChange = (lang) => setCurrentLang(lang);
+    i18next.on('languageChanged', handleLanguageChange);
+    return () => i18next.off('languageChanged', handleLanguageChange);
+  }, []);
+
+  return (
+    <ul className={`${css.localesList} ${style}`}>
+      {LANGUAGES.map(({ language, title }) => (
+        <li
+          key={language}
+          className={`${css.localeItem} ${currentLang === language ? css.checked : ""}`}
+          onClick={() => i18next.changeLanguage(language)}
+        >
+          {title}
+        </li>
+      ))}
+    </ul>
+  );
 };
-
-LocalizationList.propTypes ={
-    style: PropTypes.string.isRequired,
-}
 
 export default LocalizationList;

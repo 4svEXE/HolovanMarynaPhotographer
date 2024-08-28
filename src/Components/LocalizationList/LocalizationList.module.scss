@@ -2,6 +2,11 @@
   li {
     position: relative;
     height: 24px;
+
+    &.localeItem {
+      cursor: pointer;
+      user-select: none;
+    }
   }
 }
 
