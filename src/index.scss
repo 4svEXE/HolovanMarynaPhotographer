@@ -13,8 +13,8 @@ p {
 }
 
 $tablet-breakpoint: 768px;
-$small-desktop-breakpoint: 1200px;
-$desktop-breakpoint: 1400px;
+$desktop-breakpoint: 1200px;
+$large-desktop-breakpoint: 1440px;
 
 body {
   font-family: Manrope, sans-serif;
@@ -27,10 +27,10 @@ body {
   max-width: none;
 }
 
-.section{
-  padding-left: 10px;
-  padding-right: 10px;
-}
+// .section{
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
 
 @media (min-width: $tablet-breakpoint) {
   .container {
@@ -38,17 +38,17 @@ body {
   }
 }
 
-@media (min-width: $small-desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .container {
     width: 1136px;
   }
 }
 
-@media (min-width: $desktop-breakpoint) {
-  .container {
-    width: 1243px;
-  }
-}
+// @media (min-width: $desktop-breakpoint) {
+//   .container {
+//     width: 1243px;
+//   }
+// }
 
 // @layer base {
 //   body {
