@@ -15,10 +15,10 @@ import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-d
 const HeroSection = () => {
   return (
     <section
-      className={`section relative ${css.heroSection} overflow-hidden md:flex md:bg-right-bottom md:overflow-visible xlg:px-20`}
+      className={`section ${css.heroSection} overflow-hidden md:flex md:bg-right-bottom xlg:px-20 xlg:overflow-visible`}
     >
       <div
-        className={`container ${css.container} pb-80 md:flex xlg:justify-between xlg:pt-32 xlg:pb-20`}
+        className={`container pb-80 md:flex xlg:justify-between xlg:pt-32 xlg:pb-20`}
       >
         <div className="md:w-1/2 xlg:flex xlg:flex-col">
           <h1 className={`flex flex-col xlg:w-96`}>
@@ -32,7 +32,7 @@ const HeroSection = () => {
             Ваша історія в кожній фотографії
           </p>
 
-          <div className="flex flex-row justify-between xlg:mt-auto">
+          <div className="flex flex-row justify-between xlg:mt-auto xlg:justify-normal">
             <button className="flex gap-2 items-center self-end">
               Записатися
               <Icon id={"arrow-white"} width={13} height={13} />
@@ -43,7 +43,7 @@ const HeroSection = () => {
                 width={89}
               />
             </div>
-            <div className="ssm:hidden md:block">
+            <div className="ssm:hidden md:block xlg:relative xlg:left-40 xlg:bottom-10">
               <Icon
               id={"curve-arrow-big"}
               width={150}
@@ -53,7 +53,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`${css.imageContainer} flex bottom-12 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
+        <div className={`${css.imageContainer} flex absolute bottom-12 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
 
           <picture className="w-full">
             <source
@@ -86,8 +86,8 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`absolute -z-10 -bottom-7 right-0 `}>
-          <picture className="w-full relative">
+        <div className={`absolute -z-10 -bottom-7 right-0`}>
+          <picture>
             <source
               media="(min-width: 1440px)"
               srcSet={`${heroBgDesktop} 1x, ${heroBg2xDesktop} 2x`}
