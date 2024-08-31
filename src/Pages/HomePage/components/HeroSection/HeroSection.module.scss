@@ -1,11 +1,8 @@
 .heroSection{
-    background-image: url(../../../../images/shared/backgrounds/hero-bg-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
 
-    .hero{
+    // .hero{
         
-    }
+    // }
 
     h1{
         font-size: 67px;
@@ -33,14 +30,13 @@
 
     gap: 32px;
 
-    img{
+    picture{
         transform: rotate(-13.22deg);
     }
 }
 
-@media screen and (min-resolution:192dpi) {
+@media screen and (min-width:1440px) {
     .heroSection{
-        background-image: url(../../../../images/shared/backgrounds/hero-bg-mobile@2x.png);
-        background-size: contain;
+        height: 701px;
     }
 }

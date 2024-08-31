@@ -22,15 +22,22 @@ body {
 }
 
 .container {
-  width: 340px;
+  max-width: 340px;
   margin: 0 auto;
   max-width: none;
 }
 
-// .section{
-//   padding-left: 10px;
-//   padding-right: 10px;
-// }
+.section{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width:375px) {
+  .container{
+    max-width: none;
+    width: 340px;
+  }
+}
 
 @media (min-width: $tablet-breakpoint) {
   .container {
