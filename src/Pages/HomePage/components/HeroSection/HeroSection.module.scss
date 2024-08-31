@@ -1,9 +1,4 @@
 .heroSection{
-
-    // .hero{
-        
-    // }
-
     h1{
         font-size: 67px;
         line-height: 1;    
@@ -23,10 +18,18 @@
     }
 }
 
+.arrowIcon{
+    width: 1em;
+    height: 1em;
+    fill: #000000;
+    stroke: #000000;
+}
+
+
 .imageContainer{
-    padding-top: 110px;
-    padding-left: 48px;
-    padding-bottom: 90px;
+    position: absolute;
+    // bottom: 20px;
+    right: -50px;
 
     gap: 32px;
 
@@ -38,5 +41,18 @@
 @media screen and (min-width:1440px) {
     .heroSection{
         height: 701px;
+
+        h1{
+            font-size: 96px;
+            line-height: 0.9;
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        .imageContainer{
+            gap: 70px;
+        }
     }
 }

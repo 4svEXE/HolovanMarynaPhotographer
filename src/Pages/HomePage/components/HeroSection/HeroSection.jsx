@@ -9,6 +9,8 @@ import heroBgMobile from "../../../../images/shared/mobile/backgrounds/hero-bg-m
 import heroBg2xMobile from "../../../../images/shared/mobile/backgrounds/hero-bg-mobile@2x.png";
 import heroBgDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop.png";
 import heroBg2xDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop@2x.png";
+import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-desktop.png";
+
 
 const HeroSection = () => {
   return (
@@ -16,37 +18,42 @@ const HeroSection = () => {
       className={`section relative ${css.heroSection} overflow-hidden md:flex md:bg-right-bottom md:overflow-visible xlg:px-20`}
     >
       <div
-        className={`container md:flex xlg:justify-between xlg:pt-32 xlg:pb-20`}
+        className={`container ${css.container} pb-80 md:flex xlg:justify-between xlg:pt-32 xlg:pb-20`}
       >
         <div className="md:w-1/2 xlg:flex xlg:flex-col">
-          <h1 className={`flex flex-col xlg:w-96 xlg:text-7xl`}>
+          <h1 className={`flex flex-col xlg:w-96`}>
             Maryna
-            <span className="relative left-10 sm:left-24 mk:left-24 lg:left-32 xlg:text-right xlg:-left-3">
+            <span className="relative left-10 sm:left-24 mk:left-24 lg:left-32 xlg:left-44 xlg:py-2">
               Holovan
             </span>
           </h1>
 
-          <p className="text-right relative xlg:text-center">
+          <p className="text-right relative xlg:text-center xlg:left-7">
             Ваша історія в кожній фотографії
           </p>
 
-          <div className="flex flex-row justify-between xlg:justify-self-end">
+          <div className="flex flex-row justify-between xlg:mt-auto">
             <button className="flex gap-2 items-center self-end">
               Записатися
               <Icon id={"arrow-white"} width={13} height={13} />
             </button>
-            <div>
+            <div className="relative right-5 md:hidden">
               <Icon
                 id={"curve-arrow"}
                 width={89}
-                style={{ position: "relative", right: "20px" }}
+              />
+            </div>
+            <div className="ssm:hidden md:block">
+              <Icon
+              id={"curve-arrow-big"}
+              width={150}
               />
             </div>
           </div>
 
         </div>
 
-        <div className={`${css.imageContainer} flex relative left-5`}>
+        <div className={`${css.imageContainer} flex bottom-12 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
 
           <picture className="w-full">
             <source
@@ -60,7 +67,7 @@ const HeroSection = () => {
             />
           </picture>
 
-          <picture className="w-full relative top-4">
+          <picture className="w-full relative top-4 xlg:top-10">
             <source
               media="(min-width: 1440px)"
               srcSet={`${heroImage1_desktop} 1x, ${heroImage1_desktop_2x} 2x`}
@@ -79,7 +86,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`absolute -z-10 bottom-0 right-0 `}>
+        <div className={`absolute -z-10 -bottom-7 right-0 `}>
           <picture className="w-full relative">
             <source
               media="(min-width: 1440px)"
@@ -98,5 +105,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-// mb-6 text-right
+// relative pt-28 left-5 xlg:pt-0 xlg:left-14

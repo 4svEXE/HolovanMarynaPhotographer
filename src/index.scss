@@ -23,7 +23,6 @@ body {
 
 .container {
   max-width: 340px;
-  margin: 0 auto;
   max-width: none;
 }
 
@@ -48,6 +47,12 @@ body {
 @media (min-width: $desktop-breakpoint) {
   .container {
     width: 1136px;
+  }
+};
+
+@media (min-width:$large-desktop-breakpoint) {
+  .container{
+    width: 1302px;
   }
 }
 
