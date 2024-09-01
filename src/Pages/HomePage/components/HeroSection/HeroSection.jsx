@@ -18,7 +18,7 @@ const HeroSection = () => {
       className={`section ${css.heroSection} md:flex md:bg-right-bottom xlg:px-20 md:overflow-visible`}
     >
       <div
-        className={`container pb-80 md:flex md:pb-10 xlg:justify-between xlg:pt-32 xlg:pb-20`}
+        className={`container pb-80 md:flex md:pb-0 xlg:justify-between xlg:pt-32 xlg:pb-20`}
       >
         <div className="md:w-1/2 xlg:flex xlg:flex-col">
           <h1 className={`flex flex-col xlg:w-96`}>
@@ -47,6 +47,7 @@ const HeroSection = () => {
               <Icon
               id={"curve-arrow-big"}
               width={150}
+
               />
             </div>
           </div>
