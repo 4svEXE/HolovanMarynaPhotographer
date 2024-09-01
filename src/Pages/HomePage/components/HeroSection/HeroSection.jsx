@@ -15,10 +15,10 @@ import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-d
 const HeroSection = () => {
   return (
     <section
-      className={`section ${css.heroSection} overflow-hidden md:flex md:bg-right-bottom xlg:px-20 xlg:overflow-visible`}
+      className={`section ${css.heroSection} md:flex md:bg-right-bottom xlg:px-20 md:overflow-visible`}
     >
       <div
-        className={`container pb-80 md:flex xlg:justify-between xlg:pt-32 xlg:pb-20`}
+        className={`container pb-80 md:flex md:pb-10 xlg:justify-between xlg:pt-32 xlg:pb-20`}
       >
         <div className="md:w-1/2 xlg:flex xlg:flex-col">
           <h1 className={`flex flex-col xlg:w-96`}>

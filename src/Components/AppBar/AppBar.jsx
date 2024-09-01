@@ -18,7 +18,7 @@ const AppBar = () => {
   }
 
   return (
-    <header className={`${css.header}`}>
+    <header className={`${css.header} md:px-8`}>
       <div className={"container flex justify-between items-center"}>
         <Icon
           id={"logo"}
