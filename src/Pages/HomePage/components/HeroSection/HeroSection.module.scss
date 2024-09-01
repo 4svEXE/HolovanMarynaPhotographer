@@ -1,0 +1,58 @@
+.heroSection{
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+
+    h1{
+        font-size: 67px;
+        line-height: 1;    
+    }
+
+    p{
+        line-height: 1.5;
+    }
+
+    button{
+        padding: 12px;
+        border: 1px solid #000000;
+        border-radius: 28px;
+
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+
+.arrowIcon{
+    width: 1em;
+    height: 1em;
+    fill: #000000;
+    stroke: #000000;
+}
+
+
+.imageContainer{
+    gap: 32px;
+
+    picture{
+        transform: rotate(-13.22deg);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .heroSection{
+        height: 701px;
+
+        h1{
+            font-size: 96px;
+            line-height: 0.9;
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        .imageContainer{
+            gap: 70px;
+        }
+    }
+}

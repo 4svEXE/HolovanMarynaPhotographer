@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,8 +17,8 @@ p {
 }
 
 $tablet-breakpoint: 768px;
-$small-desktop-breakpoint: 1200px;
-$desktop-breakpoint: 1400px;
+$desktop-breakpoint: 1200px;
+$large-desktop-breakpoint: 1440px;
 
 body {
   font-family: Manrope, sans-serif;
@@ -22,8 +26,7 @@ body {
 }
 
 .container {
-  width: 340px;
-  margin: 0 auto;
+  max-width: 340px;
   max-width: none;
 }
 
@@ -32,23 +35,36 @@ body {
   padding-right: 10px;
 }
 
+@media screen and (min-width:375px) {
+  .container{
+    max-width: none;
+    width: 340px;
+  }
+}
+
 @media (min-width: $tablet-breakpoint) {
   .container {
     width: 704px;
   }
 }
 
-@media (min-width: $small-desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .container {
     width: 1136px;
   }
-}
+};
 
-@media (min-width: $desktop-breakpoint) {
-  .container {
-    width: 1243px;
+@media (min-width:$large-desktop-breakpoint) {
+  .container{
+    width: 1302px;
   }
 }
+
+// @media (min-width: $desktop-breakpoint) {
+//   .container {
+//     width: 1243px;
+//   }
+// }
 
 // @layer base {
 //   body {
