@@ -7,8 +7,8 @@ import heroImageDesktop2x from "../../../../images/shared/desktop/hero-desktop@2
 const IntroductionSection = () => {
   return (
     <section className={`${css.introductionSection} section pt-20 pb-20 xlg:pt-32 xlg:pb-32`}>
-      <div className="container xlg:flex">
-        <div className={`${css.articleContainer} xlg:ml-20`}>
+      <div className="container md:flex">
+        <div className={`${css.articleContainer} md:w-1/2 xlg:ml-20`}>
           <h2 className="mb-8 xlg:mb-16">Про мене</h2>
           <p className="mb-3 xlg:text-base xlg:mb-5">
             Мене звати Марина, я професійний фотограф, захоплена мистецтвом
@@ -22,7 +22,7 @@ const IntroductionSection = () => {
             на індивідуальні потреби кожного клієнта.
           </p>
         </div>
-        <picture className="mx-auto flex justify-center -rotate-12 xlg:h-72">
+        <picture className="mx-auto flex justify-center -rotate-12 md:h-64 xlg:h-72">
           <source
             media="(min-width:1440px)"
             srcSet={`${heroImageDesktop} 1x,${heroImageDesktop2x} 2x`}
