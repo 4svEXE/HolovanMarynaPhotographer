@@ -28,7 +28,7 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-right relative xlg:text-center xlg:left-7">
+          <p className="text-right relative xlg:text-center xlg:text-base xlg:left-7">
             Ваша історія в кожній фотографії
           </p>
 
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`${css.imageContainer} flex absolute bottom-12 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
+        <div className={`${css.imageContainer} flex absolute bottom-12 -right-7 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
 
           <picture className="w-full">
             <source

@@ -1,0 +1,18 @@
+.introductionSection {
+  background-color: #ffffff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+@media (min-width: 1440px) {
+  .articleContainer {
+    width: 519px;
+  }
+
+  .introductionSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 105px;
+    padding-left: 105px;
+  }
+}
