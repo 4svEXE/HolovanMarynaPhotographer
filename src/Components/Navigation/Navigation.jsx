@@ -7,9 +7,9 @@ const Navigation = () => {
   return (
     <nav className={""}>
       <ul className={`${css.navList} flex gap-4`}>
-        <li className={css.checked}>{t("header.nav.AboutMe")}</li>
-        <li>{t("header.nav.Portfolio")}</li>
-        <li>{t("header.nav.Contacts")}</li>
+        <li className={css.checked}>{"About me"}</li>
+        <li>{"Portfolio"}</li>
+        <li>{"Contacts"}</li>
       </ul>
     </nav>
   );
@@ -17,3 +17,7 @@ const Navigation = () => {
 
 
 export default Navigation;
+
+// t("header.nav.AboutMe")
+// t("header.nav.Portfolio")
+// t("header.nav.Contacts")
