@@ -3,7 +3,7 @@ import Navigation from "Components/Navigation/Navigation";
 import LocalizationList from "Components/LocalizationList/LocalizationList";
 import css from "./AppBar.module.scss";
 import MobileMenu from "Components/MobileMenu/MobileMenu";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const AppBar = () => {
 
@@ -17,8 +17,26 @@ const AppBar = () => {
     setModalIsOpen(false);
   }
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <header className={`${css.header}`}>
+    <header className={`${css.header} fixed z-50 ${isScrolled ? css.scrolled : ""}`}>
       <div className={"container flex justify-between items-center"}>
         <Icon
           id={"logo"}
