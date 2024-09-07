@@ -58,6 +58,11 @@ section{
   .container {
     width: 704px;
   }
+
+  .section{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
