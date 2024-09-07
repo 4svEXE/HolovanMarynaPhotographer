@@ -8,6 +8,17 @@
     padding-right: 15px;  
     padding-top: 50px;
     padding-bottom: 50px;
+
+
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+
+    background-color: transparent;
+}
+
+.scrolled{
+    background-color: #ffffff;
 }
 
 @media (min-width:1400px){
