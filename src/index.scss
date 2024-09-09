@@ -42,6 +42,10 @@ section{
   padding-right: 10px;
 }
 
+.center{
+  margin: 0 auto;
+}
+
 @media screen and (min-width:375px) {
   .container{
     max-width: none;
@@ -76,16 +80,3 @@ section{
     width: 1302px;
   }
 }
-
-// @media (min-width: $desktop-breakpoint) {
-//   .container {
-//     width: 1243px;
-//   }
-// }
-
-// @layer base {
-//   body {
-//     min-height: 100vh;
-
-//   }
-// }
