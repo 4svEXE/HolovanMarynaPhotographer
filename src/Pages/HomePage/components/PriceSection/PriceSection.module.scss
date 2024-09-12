@@ -13,11 +13,8 @@
 
     .priceContainer{
         height: 360px;
-
-        padding:22px 14px;
-
+        padding: 22px 14px;
         border-radius: 8px;
-
         background-color: rgb(247, 242, 239);
 
         h3{
@@ -44,8 +41,9 @@
     }
 }
 
-@media screen and (min-width:1440px) {
-    .priceContainer{
-        width: 376px;
-    }
-}
+// З грідами цей шматочок не треба)
+// @media screen and (min-width:1440px) {
+//     .priceContainer{
+//         width: 376px;
+//     }
+// }
