@@ -10,7 +10,7 @@ const GallerySection = () => {
   const categories = ["Всі", "Портрет", "Love Story", "НЮ"];
 
   return (
-    <section className={`${css.gallerySection} section bg-white pb-10`}>
+    <section className={`${css.gallerySection} section bg-white`}>
       <div className="container">
         <div className="xlg:ml-20">
           <h2 className="mb-8">Портфоліо</h2>
