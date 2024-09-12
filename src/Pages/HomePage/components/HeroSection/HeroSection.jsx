@@ -87,13 +87,14 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`absolute -z-10 -bottom-7 right-0`}>
+        <div className={`absolute -z-10 -bottom-7 right-0 flex justify-center md:justify-end xm:w-full`}>
           <picture>
             <source
               media="(min-width: 1440px)"
               srcSet={`${heroBgDesktop} 1x, ${heroBg2xDesktop} 2x`}
             />
             <img
+            className="xm:right-0"
               src={heroImage1}
               srcSet={`${heroBgMobile} 1x, ${heroBg2xMobile} 2x`}
               alt=""
@@ -106,4 +107,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-// relative pt-28 left-5 xlg:pt-0 xlg:left-14
