@@ -15,7 +15,7 @@ import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-d
 const HeroSection = () => {
   return (
     <section
-      className={`section ${css.heroSection} md:flex md:bg-right-bottom xlg:px-20 md:overflow-visible`}
+      className={`section ${css.heroSection} pt-32 md:flex md:bg-right-bottom xlg:px-20 md:overflow-visible`}
     >
       <div
         className={`container pb-80 md:flex md:pb-0 xlg:justify-between xlg:pt-32 xlg:pb-20`}
