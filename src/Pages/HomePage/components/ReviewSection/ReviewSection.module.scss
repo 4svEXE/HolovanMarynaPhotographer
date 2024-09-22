@@ -1,0 +1,11 @@
+.navBtnNext{
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width:1440px) {
+   .reviewsList{
+    li{
+        width: 1040px !important;
+    }
+   }
+}
