@@ -8,6 +8,8 @@ import ReviewerItem from "Components/ReviewerItem/ReviewerItem";
 
 import bgMobile from "../../../../images/shared/mobile/backgrounds/review-section-bg-mobile.png";
 import bgMobile2x from "../../../../images/shared/mobile/backgrounds/review-section-bg-mobile@2x.png";
+import bgDesktop from "../../../../images/shared/desktop/backgrounds/reviews-bg.png";
+
 import reviewer from "../../../../images/shared/mobile/reviews-section-photo.png";
 
 const swiper = new Swiper(".swiper", {
@@ -50,16 +52,16 @@ const reviews = [
 
 const ReviewSection = () => {
   return (
-    <section className={`section relative pt-20 pb-20`}>
-      <div className={`container `}>
+    <section className={`section relative pt-28`}>
+      <div className={`container`}>
         <h2 className="mb-32">Відгуки</h2>
-        <div className="swiper flex flex-col justify-around items-center xlg:flex-row">
+        <div className={`swiper ${css.swiper} flex flex-col justify-around items-center xlg:flex-row`}>
 
-          <div className="swiper-button-prev hidden xlg:block">
+          <div className="swiper-button-prev absolute left-20 top-3/4 hidden xlg:block">
             <Icon id={"arrow-black"} width={23} height={23}></Icon>
           </div>
 
-          <ul className={`swiper-wrapper mb-5 ${css.reviewsList}`}>
+          <ul className={`swiper-wrapper mb-5 xlg:mb-0`}>
             {reviews.map((item, index) => {
               return (
                 <li key={index} className={`swiper-slide ${css.swiperSlide} flex flex-col items-center w-full md:flex-row md:justify-between`}>
@@ -78,14 +80,16 @@ const ReviewSection = () => {
             </div>
           </div>
 
-          <div className={`swiper-button-next ${css.navBtnNext} hidden xlg:block`}>
+          <div className={`swiper-button-next ${css.navBtnNext} absolute right-20 top-3/4 hidden xlg:block`}>
             <Icon id={"arrow-black"} width={23} height={23}></Icon>
           </div>
 
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 -z-50">
+      <div className="absolute bottom-0 left-0 -z-50 md:w-2/3 xlg:w-full">
         <picture>
+          <source media="(min-width:1400px)"
+          srcSet={bgDesktop}/>
           <img src={bgMobile} srcSet={bgMobile2x} alt="" />
         </picture>
       </div>
