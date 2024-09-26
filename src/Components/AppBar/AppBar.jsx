@@ -36,8 +36,8 @@ const AppBar = () => {
 
 
   return (
-    <header className={`${css.header} fixed z-50 ${isScrolled ? css.scrolled : ""}`}>
-      <div className={"container flex justify-between items-center"}>
+    <header className={`${css.header} w-full fixed z-50 ${isScrolled ? css.scrolled : ""}`}>
+      <div className={"container flex justify-between items-center "}>
         <Icon
           id={"logo"}
           width={154}
