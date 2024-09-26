@@ -1,0 +1,17 @@
+.navBtnNext{
+    transform: rotateY(180deg);
+}
+
+.swiper{
+    padding-bottom: 80px;
+}
+
+@media screen and (min-width:1440px) {
+    .swiper{
+        width: 1040px;
+        position: static;
+
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+}

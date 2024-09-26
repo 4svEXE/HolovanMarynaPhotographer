@@ -1,0 +1,32 @@
+.reviewerPicture{
+    width: 319px;
+    height: 328px;
+}
+
+.review{
+    width: 319px;
+
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+.reviewer{
+    width: 319px;
+    
+    font-size: 16px;
+    line-height: 1.3;
+    
+    color: rgba(101, 100, 100, 1);
+}
+
+@media (min-width:1440px){
+    .review{
+        width: 548px;
+    }
+
+    .reviewerPicture{
+        width: 407px;
+        height: 416px;
+    }
+}

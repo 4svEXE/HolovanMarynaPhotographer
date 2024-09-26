@@ -1,6 +1,5 @@
 import css from "./HeroSection.module.scss";
 import Icon from "../../../../Components/Icon/Icon";
-import icons from "../../../../images/favicon/icons.svg";
 import heroImage1 from "../../../../images/shared/mobile/hero-image-1.png";
 import heroImage1_2x from "../../../../images/shared/mobile/hero-image-1@2x.png";
 import heroImage1_desktop from "../../../../images/shared/desktop/hero-image-1-desktop.png";
