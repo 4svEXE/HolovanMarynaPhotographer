@@ -64,7 +64,7 @@ const ReviewSection = () => {
           <ul className={`swiper-wrapper mb-5 xlg:mb-0`}>
             {reviews.map((item, index) => {
               return (
-                <li key={index} className={`swiper-slide ${css.swiperSlide} flex flex-col items-center w-full md:flex-row md:justify-between`}>
+                <li key={index} className={`swiper-slide flex flex-col items-center w-full md:flex-row md:justify-between`}>
                   <ReviewerItem data={item}></ReviewerItem>
                 </li>
               );
