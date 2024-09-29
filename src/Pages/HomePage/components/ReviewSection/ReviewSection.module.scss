@@ -2,12 +2,12 @@
     transform: rotateY(180deg);
 }
 
-.swiper{
+.swiperConainer{
     padding-bottom: 80px;
 }
 
 @media screen and (min-width:1440px) {
-    .swiper{
+    .swiperConainer{
         width: 1040px;
         position: static;
 
