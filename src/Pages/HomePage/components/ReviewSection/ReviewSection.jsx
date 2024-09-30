@@ -97,10 +97,10 @@ const ReviewSection = () => {
         </svg>
       </div> */}
       <div className="absolute bottom-0 left-0 -z-50 xlg:w-full">
-        <picture className="">
+        <picture>
           <source media="(min-width:1400px)"
           srcSet={bgDesktop}/>
-          <img className="w-full" src={bgMobile} srcSet={bgMobile2x} alt="" />
+          <img className={css.bg} src={bgMobile} srcSet={bgMobile2x} alt="" />
         </picture>
       </div>
     </section>
