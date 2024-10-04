@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -10,7 +11,7 @@ html,body{
   box-sizing: border-box;
 }
 
-h2{
+h2 {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.18;
@@ -37,23 +38,90 @@ body {
   max-width: none;
 }
 
-section{
+section {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.center{
+.center {
   margin: 0 auto;
 }
 
-@media screen and (min-width:375px) {
-  .container{
+.ac {
+  margin-top: 0px;
+
+  border-top: 1px solid rgba(101, 100, 100, 1);
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+
+  background-color: transparent;
+}
+.ac:last-child {
+  border-bottom: 1px solid rgba(101, 100, 100, 1);
+}
+.ac .ac-header {
+  margin: 0;
+  padding: 0;
+}
+.ac .ac-trigger {
+  font: bold 20px Manrope, sans-serif;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.ac .ac-trigger::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+
+  color: rgba(101, 100, 100, 1);
+}
+
+.ac .acItemIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+  transition: transform 300ms ease-in-out;
+
+  height: 15px;
+  width: 15px;
+
+  color: rgba(101, 100, 100, 1);
+
+}
+
+.ac .ac-trigger:focus {
+  color: #111;
+}
+.ac .ac-panel .ac-text {
+  font: 18px Manrope, sans-serif;
+  color: #111;
+  font-weight: 400;
+  padding-top: 14px;
+  margin: 0;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: "";
+}
+
+.ac.is-active > div > .acItemIcon{
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 375px) {
+  .container {
     max-width: none;
     width: 340px;
     margin: 0 auto;
   }
 
-  section{
+  section {
     padding: 0px;
   }
 }
@@ -63,7 +131,7 @@ section{
     width: 704px;
   }
 
-  .section{
+  .section {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -73,10 +141,10 @@ section{
   .container {
     width: 1136px;
   }
-};
+}
 
-@media (min-width:$large-desktop-breakpoint) {
-  .container{
+@media (min-width: $large-desktop-breakpoint) {
+  .container {
     width: 1283px;
   }
 }

@@ -24,7 +24,6 @@ const questions = [
 const FAQ = () => {
   useEffect(() => {
     const accordion = new Accordion(".accordion-container", {
-      showMultiple: true,
       duration: 700,
     });
   }, []);
@@ -38,18 +37,18 @@ const FAQ = () => {
             return (
               <li
                 key={index}
-                className={`${css.ac} ac ${css.accItem} pt-2 pb-2 xlg:pt-10 xlg:pb-10`}
+                className={`ac relative pt-2 pb-2 xlg:pt-10 xlg:pb-10`}
               >
-                <h3 className={`${css.acHeader} ac-header`}>
-                  <button
-                    type="button"
-                    className={`ac-trigger ${css.acTrigger}`}
-                  >
-                    {item.question}
-                  </button>
-                </h3>
-                <div className={`${css.acPanel} ac-panel`}>
-                  <p className={`${css.acText} ac-text`}>{item.answer}</p>
+                <div>
+                  <h3 className={`ac-header`}>
+                    <button type="button" className={`ac-trigger`}>
+                      {item.question}
+                    </button>
+                  </h3>
+                  <p className="acItemIcon absolute right-2 top-9 xlg:top-14 xlg:right-4">+</p>
+                </div>
+                <div className={`ac-panel`}>
+                  <p className={`ac-text`}>{item.answer}</p>
                 </div>
               </li>
             );
