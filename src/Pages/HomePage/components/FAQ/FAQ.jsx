@@ -29,13 +29,13 @@ const FAQ = () => {
   }, []);
 
   return (
-    <section className={`${css.FAQ} pt-20 pb-20`}>
+    <section className={`${css.FAQ} pt-20 pb-20 xlg:pt-28 xlg:pb-28`}>
       <div className={`container ${css.FAQContainer}`}>
         <h2 className="text-center mb-10">FAQ</h2>
         <ul className={`accordion-container`}>
           {questions.map((item, index) => {
             return (
-              <li
+              <li 
                 key={index}
                 className={`ac relative pt-2 pb-2 xlg:pt-10 xlg:pb-10`}
               >
