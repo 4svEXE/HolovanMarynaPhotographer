@@ -5,7 +5,7 @@ const ReviewerItem = ({data}) => {
     const {name,profession,review,picture} = data;
     return (<>
     <img className={`${css.reviewerPicture} mb-12 md:mb-0`} src={picture.reviewer} alt="" />
-    <div className='mb-10 xlg:mb-0'>
+    <div className={`${css.reviewContainer} mb-10 xlg:mb-0`}>
     <p className={`${css.review} mb-4`}>{review}</p>
     <p className={`${css.reviewer}`}>{`${name} ${profession ? `, ${profession}` : ''}`}</p>
     </div>
