@@ -3,6 +3,7 @@ import IntroductionSection from "./components/IntroductionSection/IntroductionSe
 import GallerySection from "./components/GallerySection/GallerySection";
 import PriceSection from "./components/PriceSection/PriceSection";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
+import FAQ from "./components/FAQ/FAQ";
 
 const HomePage = () => {
 return (
@@ -12,6 +13,7 @@ return (
         <GallerySection></GallerySection>
         <PriceSection></PriceSection>
         <ReviewSection></ReviewSection>
+        <FAQ></FAQ>
     </>
 );
 };
