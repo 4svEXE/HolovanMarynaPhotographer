@@ -2,6 +2,7 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import css from "./ReviewSection.module.scss";
+import icons from '../../../../images/favicon/icons.svg';
 
 import Icon from "Components/Icon/Icon";
 import ReviewerItem from "Components/ReviewerItem/ReviewerItem";
@@ -11,18 +12,8 @@ import bgMobile2x from "../../../../images/shared/mobile/backgrounds/review-sect
 import bgDesktop from "../../../../images/shared/desktop/backgrounds/reviews-bg.png";
 
 import reviewer from "../../../../images/shared/mobile/reviews-section-photo.png";
+import { useEffect } from "react";
 
-const swiper = new Swiper(".swiper", {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-
-  direction: "horizontal",
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
 const reviews = [
   {
@@ -51,11 +42,25 @@ const reviews = [
 ];
 
 const ReviewSection = () => {
+  useEffect(()=>{
+    const swiper = new Swiper(".swiper", {
+      // configure Swiper to use modules
+      modules: [Navigation],
+    
+      direction: "horizontal",
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
+  },[]);
   return (
     <section className={`section relative pt-28`}>
       <div className={`container`}>
         <h2 className="mb-32">Відгуки</h2>
-        <div className={`swiper ${css.swiper} flex flex-col justify-around items-center xlg:flex-row`}>
+        <div className={`swiper ${css.swiperConainer} flex flex-col justify-around items-center xlg:flex-row`}>
 
           <div className="swiper-button-prev absolute left-20 top-3/4 hidden xlg:block">
             <Icon id={"arrow-black"} width={23} height={23}></Icon>
@@ -86,11 +91,16 @@ const ReviewSection = () => {
 
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 -z-50 md:w-2/3 xlg:w-full">
+      {/* <div className="absolute bottom-0 left-0 -z-50">
+        <svg className="w-full h-96">
+          <use className={css.bg} href={`${icons}#reviews-bg`}/>
+        </svg>
+      </div> */}
+      <div className="absolute bottom-0 left-0 -z-50 xlg:w-full">
         <picture>
           <source media="(min-width:1400px)"
           srcSet={bgDesktop}/>
-          <img src={bgMobile} srcSet={bgMobile2x} alt="" />
+          <img className={css.bg} src={bgMobile} srcSet={bgMobile2x} alt="" />
         </picture>
       </div>
     </section>

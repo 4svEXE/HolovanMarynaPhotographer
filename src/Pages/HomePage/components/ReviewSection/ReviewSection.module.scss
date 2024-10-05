@@ -1,17 +1,27 @@
-.navBtnNext{
-    transform: rotateY(180deg);
+.navBtnNext {
+  transform: rotateY(180deg);
 }
 
-.swiper{
-    padding-bottom: 80px;
+.swiperConainer {
+  padding-bottom: 80px;
 }
 
-@media screen and (min-width:1440px) {
-    .swiper{
-        width: 1040px;
-        position: static;
+@media screen and (min-width:1024px) {
+    .bg {
+        width: 980px;
+    }      
+}
 
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
+@media screen and (min-width: 1440px) {
+  .swiperConainer {
+    width: 1040px;
+    position: static;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .bg{
+    width: 100%;
+  }
 }
