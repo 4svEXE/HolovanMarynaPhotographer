@@ -1,8 +1,18 @@
-.error{
-    color: red;
-}
+.formContainer{
+    .error{
+        color: red;
+    }
+    
+    button.submitBtn{
+        border-radius: 26px;
+    }
 
-.submitBtn{
-    margin: 0 auto;
-    border-radius: 26px;
+    
+    .fieldsContainer{
+        @media screen and (min-width:1440px) {
+            input{
+                width: 302px;
+            }
+        }
+    }
 }

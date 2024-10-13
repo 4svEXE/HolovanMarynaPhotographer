@@ -4,4 +4,16 @@
         font-weight: 600;
         line-height: 1.3;
     }
+
+    .sectionBg{
+        width: 509px;
+        height: 484px;
+    }
+
+    @media (min-width:768px){
+    .sectionBg{
+        width: 629px;
+        height: 764px;
+    }
+    }
 }
