@@ -9,8 +9,8 @@ const contactSchema = Yup.object().shape({
     .max(50, "Too Long!")
     .required("Required"),
   phone: Yup.string()
-    .min(10, "Too Short!")
-    .max(10, "Too Long!")
+    .min(9, "Too Short!")
+    .max(11, "Too Long!")
     .required("Required"),
   email: Yup.string().email("Invalid email").required("Required"),
   message: Yup.string().max(100, "Too long"),
@@ -30,47 +30,52 @@ export default function ContactsForm() {
   };
 
   const handleSubmit = (values, actions) => {
+    console.log(values);
     actions.resetForm();
   };
 
   return (
     <>
-      <div>
+      <div className={`${scss.formContainer}`}>
         <Formik
           initialValues={initialValues}
           onSubmit={handleSubmit}
           validationSchema={contactSchema}
         >
-          <Form className="flex flex-col gap-10">
-            <label htmlFor={idForName}>
-              <Field
-                className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
-                as="input"
-                name="name"
-                id={idForName}
-                placeholder={"Імя"}
-              />
-              <ErrorMessage
-                className={scss.error}
-                name="name"
-                component={"span"}
-              />
-            </label>
-            <label htmlFor={idForPhone}>
-              <Field
-                className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
-                as="input"
-                type="number"
-                name="phone"
-                id={idForPhone}
-                placeholder={"Телефон"}
-              />
-              <ErrorMessage
-                className={scss.error}
-                name="phone"
-                component={"span"}
-              />
-            </label>
+          <Form className={`${scss.form} flex flex-col gap-10 mb-10`}>
+            <div
+              className={`${scss.fieldsContainer} flex flex-col gap-10 xlg:flex-row xlg:justify-between`}
+            >
+              <label htmlFor={idForName}>
+                <Field
+                  className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
+                  as="input"
+                  name="name"
+                  id={idForName}
+                  placeholder={"Імя"}
+                />
+                <ErrorMessage
+                  className={scss.error}
+                  name="name"
+                  component={"span"}
+                />
+              </label>
+              <label htmlFor={idForPhone}>
+                <Field
+                  className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
+                  as="input"
+                  type="number"
+                  name="phone"
+                  id={idForPhone}
+                  placeholder={"Телефон"}
+                />
+                <ErrorMessage
+                  className={scss.error}
+                  name="phone"
+                  component={"span"}
+                />
+              </label>
+            </div>
             <label htmlFor={idForEmail}>
               <Field
                 className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
@@ -100,8 +105,13 @@ export default function ContactsForm() {
                 component={"span"}
               />
             </label>
-
-            <button type="submit" className={`${scss.submitBtn} bg-black p-3 text-white w-28`}>Надіслати</button>
+            <button
+              id="submitContactFormBtn"
+              type={"submit"}
+              className={`${scss.submitBtn} bg-black p-3 text-white w-28 mx-auto md:mr-0`}
+            >
+              Надіслати
+            </button>
           </Form>
         </Formik>
       </div>

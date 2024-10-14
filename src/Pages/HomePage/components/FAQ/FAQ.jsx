@@ -23,7 +23,7 @@ const questions = [
 
 const FAQ = () => {
   useEffect(() => {
-    const accordion = new Accordion(".accordion-container", {
+    new Accordion(".accordion-container", {
       duration: 700,
     });
   }, []);
