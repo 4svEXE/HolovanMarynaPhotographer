@@ -14,13 +14,15 @@
     .sectionBg{
         width: 600px;
         height: 600px;
+        bottom: 80px;
     }
   }
 
   @media (min-width: 1440px) {
     .sectionBg {
       width: 629px;
-      height: 750px;
+      height: 700px;
+      bottom: 120px;
     }
   }
 }
