@@ -1,0 +1,27 @@
+.footerSection {
+  background-color: rgb(247, 242, 239);
+
+  .footerContainer {
+    width: 296px;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  a {
+    color: rgb(0, 0, 0);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 375px) {
+  .footerSection {
+    .footerContainer {
+      width: auto;
+    }
+  }
+}

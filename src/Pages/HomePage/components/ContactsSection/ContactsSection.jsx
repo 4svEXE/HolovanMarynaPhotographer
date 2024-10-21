@@ -7,6 +7,7 @@ import svg from "../../../../images/favicon/icons.svg";
 const ContactsSection = () => {
   return (
     <section
+      id="contacts"
       className={`section relative ${scss.contactsSection} pb-20 xlg:pt-28`}
     >
       <div className={`container md:flex md:justify-between`}>
