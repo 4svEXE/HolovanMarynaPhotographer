@@ -6,6 +6,10 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1200px;
 $large-desktop-breakpoint: 1440px;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;

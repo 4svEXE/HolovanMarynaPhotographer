@@ -6,7 +6,7 @@ import heroImageDesktop2x from "../../../../images/shared/desktop/hero-desktop@2
 
 const IntroductionSection = () => {
   return (
-    <section className={`${css.introductionSection} section pt-20 pb-20 xlg:pt-32 xlg:pb-32`}>
+    <section id="aboutMe" className={`${css.introductionSection} section pt-20 pb-20 xlg:pt-32 xlg:pb-32`}>
       <div className="container md:flex">
         <div className={`${css.articleContainer} md:w-1/2 xlg:ml-20`}>
           <h2 className="mb-8 xlg:mb-16">Про мене</h2>
