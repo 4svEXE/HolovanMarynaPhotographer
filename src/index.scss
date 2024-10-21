@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+$large-desktop-breakpoint: 1440px;
+
 html,
 body {
   overflow-x: hidden;
@@ -23,10 +27,6 @@ p {
   font-weight: 400;
   line-height: 1.4;
 }
-
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1200px;
-$large-desktop-breakpoint: 1440px;
 
 body {
   font-family: Manrope, sans-serif;
@@ -95,7 +95,6 @@ section {
   color: rgba(101, 100, 100, 1);
 
 }
-
 .ac .ac-trigger:focus {
   color: #111;
 }
@@ -115,6 +114,11 @@ section {
   transform: rotate(-45deg);
 }
 
+.submitContactFormBtn{
+  border-radius: 26px;
+  margin-left: auto;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: none;
@@ -122,9 +126,9 @@ section {
     margin: 0 auto;
   }
 
-  section {
-    padding: 0px;
-  }
+  // section {
+  //   padding: 0px;
+  // }
 }
 
 @media (min-width: $tablet-breakpoint) {
