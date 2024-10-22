@@ -11,7 +11,7 @@ return (
     <>
         <HeroSection></HeroSection>
         <IntroductionSection></IntroductionSection>
-        <GallerySection></GallerySection>
+        <GallerySection categoriesContainer={"xlg:ml-20"} section={"bg-white"} categoryBtnColor={"bg-white border-transparent"}></GallerySection>
         <PriceSection></PriceSection>
         <ReviewSection></ReviewSection>
         <FAQ></FAQ>
