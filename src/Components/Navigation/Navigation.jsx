@@ -8,7 +8,7 @@ const Navigation = () => {
 
   const location = useLocation();
   return (
-    <nav className={""}>
+    <nav >
       <ul className={`${css.navList} flex gap-4`}>
         <li className={`${location.pathname.includes("home") ? css.checked : ""}`}>
           <Link className={css.checked} to={"HolovanMarynaPhotographer/home"}>
