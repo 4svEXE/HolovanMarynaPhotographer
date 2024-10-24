@@ -4,7 +4,7 @@ import SocialsList from "Components/SocialsList/SocialsList";
 import Icon from "Components/Icon/Icon";
 import svg from "../../../../images/favicon/icons.svg";
 
-const ContactsSection = () => {
+const ContactsSection = ({section}) => {
   return (
     <section
       id="contacts"

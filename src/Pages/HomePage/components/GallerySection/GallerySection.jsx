@@ -5,23 +5,32 @@ import galleryImage1_2x from "../../../../images/shared/mobile/Gallery-picture-1
 import galleryImage1Desktop from "../../../../images/shared/desktop/Gallery-picture-1.png";
 import galleryImage1_2xDesktop from "../../../../images/shared/desktop/Gallery-picture-1@2x.png";
 
-const GallerySection = () => {
+const GallerySection = ({
+  categoriesContainer,
+  categoriesList,
+  categoryBtnActive,
+  section,
+  categoryButton,
+}) => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const categories = ["Всі", "Портрет", "Love Story", "НЮ"];
 
   return (
-    <section id="portfolio" className={`${css.gallerySection} section bg-white`}>
+    <section
+      id="portfolio"
+      className={`${css.gallerySection} section ${section}`}
+    >
       <div className="container">
-        <div className="xlg:ml-20">
+        <div className={`${categoriesContainer}`}>
           <h2 className="mb-8">Портфоліо</h2>
-          <div className="w-full overflow-x-scroll mb-10">
-            <ul className="w-max flex gap-2">
+          <div className={`overflow-x-scroll mb-10 ${categoriesList}`}>
+            <ul className="w-max flex gap-2 ">
               {categories.map((category) => (
                 <li key={category}>
                   <button
                     onClick={() => setSelectedCategory(category)}
                     className={`${css.categoryButton} ${
-                      selectedCategory === category ? css.active : ""
+                      selectedCategory === category ? categoryBtnActive : categoryButton
                     }`}
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -31,6 +40,7 @@ const GallerySection = () => {
             </ul>
           </div>
         </div>
+
         <ul className="flex flex-col gap-4 mb-10 md:flex-wrap xlg:flex-row xlg:flex-wrap xlg:gap-6 xlg:mb-40">
           <li className="xlg:odd:relative xlg:odd:top-20">
             <picture>
@@ -113,7 +123,9 @@ const GallerySection = () => {
         </ul>
 
         <div className="text-center">
-          <button className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4 xlg:`}>
+          <button
+            className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4 xlg:`}
+          >
             Дивитися більше
           </button>
         </div>
