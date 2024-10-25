@@ -5,15 +5,15 @@ import scss from "./ContactsForm.module.scss";
 
 const contactSchema = Yup.object().shape({
   name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
+    .min(2, "Занадто коротко")
+    .max(50, "Занадто довго")
+    .required("Обов'язкове поле"),
   phone: Yup.string()
-    .min(9, "Too Short!")
-    .max(11, "Too Long!")
-    .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  message: Yup.string().max(100, "Too long"),
+    .min(9, "Занадто коротко")
+    .max(11, "Занадто довго")
+    .required("Обов'язкове поле"),
+  email: Yup.string().email("Невалідний email").required("Обов'язкове поле"),
+  message: Yup.string().max(100, "Занадто довго"),
 });
 
 export default function ContactsForm() {
