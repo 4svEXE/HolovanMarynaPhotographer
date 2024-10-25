@@ -42,10 +42,8 @@ const questions = [
 
 const FAQ = () => {
   useEffect(() => {
-    const accordion = new Accordion(".accordion-container", {
-      duration: 700,
-    });
-  });
+    const accordion = new Accordion(".accordion-container");
+  },[]);
 
   return (
     <section className={`${css.FAQ} pt-20 pb-20 xlg:pt-28 xlg:pb-28`}>
