@@ -1,0 +1,18 @@
+.formContainer{
+    .error{
+        font-style: bold;
+    }
+    
+    button.submitBtn{
+        border-radius: 26px;
+    }
+
+    
+    .fieldsContainer{
+        @media screen and (min-width:1440px) {
+            input{
+                width: 302px;
+            }
+        }
+    }
+}
