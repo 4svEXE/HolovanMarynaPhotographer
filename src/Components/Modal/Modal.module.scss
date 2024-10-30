@@ -29,8 +29,8 @@
   .closeBtn {
     position: absolute;
     background-color: transparent;
-    top: 15px;
-    right: 15px;
+    top: 50px;
+    right: 16px;
     width: 24px;
     height: 24px;
     display: flex;
@@ -54,30 +54,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px 20px;
     max-height: 90%;
+    min-width: 310px;
     overflow-y: auto;
-    min-width: 343px;
     border-radius: 15px;
     background-color: #ffffff;
     box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
     transform: translate(-50%, -50%);
     transition: transform 300ms ease-in-out;
   }
-  
-  @media screen and (max-width: 374px) {
-    .reactModal_Content {
-      width: calc(100% - 32px);
-      min-width: auto;
-      padding: 40px 5px;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .reactModal_Content {
-      padding: 40px 40px;
-    }
-  
+    
+  @media screen and (min-width: 768px) {  
     .closeBtn {
       width: 28px;
       height: 28px;

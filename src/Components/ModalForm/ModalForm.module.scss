@@ -2,6 +2,27 @@
     .error{
         font-style: bold;
     }
+
+    input{
+        box-sizing: border-box;
+        height: 48px;
+        border-radius: 8px;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    
+    .messageInput{
+        box-sizing: border-box;
+        height: 106px;
+        border-radius: 8px;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+
+    }
     
     button.submitBtn{
         border-radius: 26px;

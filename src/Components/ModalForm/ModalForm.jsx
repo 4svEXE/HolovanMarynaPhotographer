@@ -12,11 +12,11 @@ const contactSchema = Yup.object().shape({
     .min(9, "Занадто коротко")
     .max(11, "Занадто довго")
     .required("Обов'язкове поле"),
-  email: Yup.string().email("Невалідний email").required("Обов'язкове поле"),
+  email: Yup.string().email("Невалідний email"),
   message: Yup.string().max(100, "Занадто довго"),
 });
 
-export default function ModalForm({modalIsOpen,closeModal}) {
+export default function ModalForm({ modalIsOpen, closeModal }) {
   const idForEmail = nanoid();
   const idForPhone = nanoid();
   const idForName = nanoid();
@@ -43,42 +43,41 @@ export default function ModalForm({modalIsOpen,closeModal}) {
           validationSchema={contactSchema}
         >
           <Form className={`${scss.form} flex flex-col gap-10 mb-10`}>
-            <div
-              className={`${scss.fieldsContainer} flex flex-col gap-10 xlg:flex-row xlg:justify-between`}
-            >
-              <label htmlFor={idForName}>
-                <Field
-                  className={`bg-transparent border-b-slate-500 w-full outline-none`}
-                  as="input"
-                  name="name"
-                  id={idForName}
-                  placeholder={"Імя"}
-                />
-                <ErrorMessage
-                  className={scss.error}
-                  name="name"
-                  component={"span"}
-                />
-              </label>
-              <label htmlFor={idForPhone}>
-                <Field
-                  className={`bg-transparent border-b-slate-500 w-full outline-none`}
-                  as="input"
-                  type="number"
-                  name="phone"
-                  id={idForPhone}
-                  placeholder={"Телефон"}
-                />
-                <ErrorMessage
-                  className={scss.error}
-                  name="phone"
-                  component={"span"}
-                />
-              </label>
-            </div>
-            <label htmlFor={idForEmail}>
+            <label htmlFor={idForName}>
+              Ім&apos;я*
               <Field
-                className={`bg-transparent border-b-slate-500 w-full outline-none`}
+                className={`bg-slate-50 px-4 py-2 w-full outline-none`}
+                as="input"
+                name="name"
+                id={idForName}
+                placeholder={"Імя"}
+              />
+              <ErrorMessage
+                className={scss.error}
+                name="name"
+                component={"span"}
+              />
+            </label>
+            <label htmlFor={idForPhone}>
+              Телефон*
+              <Field
+                className={`bg-slate-50 px-4 py-1 w-full outline-none`}
+                as="input"
+                type="number"
+                name="phone"
+                id={idForPhone}
+                placeholder={"Телефон"}
+              />
+              <ErrorMessage
+                className={scss.error}
+                name="phone"
+                component={"span"}
+              />
+            </label>
+            <label htmlFor={idForEmail}>
+              Email
+              <Field
+                className={`bg-slate-50 px-4 py-1 w-full outline-none`}
                 as="input"
                 type="email"
                 name="email"
@@ -92,9 +91,11 @@ export default function ModalForm({modalIsOpen,closeModal}) {
               />
             </label>
             <label htmlFor={idForMessage}>
+              Повідомлення
               <Field
-                className={`bg-transparent border-b-slate-500 w-full outline-none`}
-                as="input"
+                className={`${scss.messageInput} bg-slate-50 px-4 py-1 w-full outline-none h-28`}
+                as="textarea"
+                type={"text"}
                 name="message"
                 id={idForMessage}
                 placeholder={"Повідомлення"}
@@ -108,7 +109,7 @@ export default function ModalForm({modalIsOpen,closeModal}) {
             <button
               id="submitContactFormBtn"
               type={"submit"}
-              className={`${scss.submitBtn} bg-black p-3 text-white w-28 mx-auto md:mr-0`}
+              className={`${scss.submitBtn} bg-black p-3 text-white w-full md:mr-0`}
             >
               Надіслати
             </button>
