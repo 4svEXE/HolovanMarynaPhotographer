@@ -4,6 +4,7 @@ import galleryImage1 from "../../../../images/shared/mobile/Gallery-picture-1.pn
 import galleryImage1_2x from "../../../../images/shared/mobile/Gallery-picture-1@2x.png";
 import galleryImage1Desktop from "../../../../images/shared/desktop/Gallery-picture-1.png";
 import galleryImage1_2xDesktop from "../../../../images/shared/desktop/Gallery-picture-1@2x.png";
+import { Link } from "react-router-dom";
 
 const GallerySection = ({
   categoriesContainer,
@@ -30,7 +31,9 @@ const GallerySection = ({
                   <button
                     onClick={() => setSelectedCategory(category)}
                     className={`${css.categoryButton} ${
-                      selectedCategory === category ? categoryBtnActive : categoryButton
+                      selectedCategory === category
+                        ? categoryBtnActive
+                        : categoryButton
                     }`}
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -123,11 +126,12 @@ const GallerySection = ({
         </ul>
 
         <div className="text-center">
-          <button
-            className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4 xlg:`}
+          <Link
+            to={"portfolio"}
+            className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4`}
           >
             Дивитися більше
-          </button>
+          </Link>
         </div>
       </div>
     </section>
