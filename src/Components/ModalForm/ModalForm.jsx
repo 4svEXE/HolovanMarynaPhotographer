@@ -99,6 +99,7 @@ export default function ModalForm({ modalIsOpen, closeModal }) {
                 name="message"
                 id={idForMessage}
                 placeholder={"Повідомлення"}
+                
               />
               <ErrorMessage
                 className={scss.error}
