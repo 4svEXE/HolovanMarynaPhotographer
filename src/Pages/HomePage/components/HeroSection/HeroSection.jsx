@@ -9,12 +9,24 @@ import heroBg2xMobile from "../../../../images/shared/mobile/backgrounds/hero-bg
 import heroBgDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop.png";
 import heroBg2xDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop@2x.png";
 import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-desktop.png";
+import { useState } from "react";
+import RegisterModal from "Components/RegisterModal/RegisterModal";
 
 
 const HeroSection = () => {
+  const [modalIsOpen,setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <section
-      className={`section ${css.heroSection} pt-32 md:flex md:bg-right-bottom xlg:px-20 md:overflow-visible`}
+      className={`section ${css.heroSection} pt-32 md:flex md:pb-20 md:bg-right-bottom xlg:px-20 md:overflow-visible`}
     >
       <div
         className={`container pb-80 md:flex md:pb-0 xlg:justify-between xlg:pt-32 xlg:pb-20`}
@@ -32,7 +44,7 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-row justify-between xlg:mt-auto xlg:justify-normal">
-            <button className="flex gap-2 items-center self-end">
+            <button className="flex gap-2 items-center self-end" onClick={()=>openModal()}>
               Записатися
               <Icon id={"arrow-white"} width={13} height={13} />
             </button>
@@ -73,10 +85,6 @@ const HeroSection = () => {
               srcSet={`${heroImage1_desktop} 1x, ${heroImage1_desktop_2x} 2x`}
             />
 
-            {/* <source
-              media="(min-width:320px)"
-              srcSet={`${heroImage1} 1x, ${heroImage1_2x} 2x`}
-            /> */}
             <img
               src={heroImage1}
               srcSet={`${heroImage1} 1x, ${heroImage1_2x} 2x`}
@@ -100,9 +108,15 @@ const HeroSection = () => {
             />
           </picture>
         </div>
+        <RegisterModal modalIsOpen={modalIsOpen} closeModal={closeModal}></RegisterModal>
       </div>
     </section>
   );
 };
 
 export default HeroSection;
+
+            {/* <source
+              media="(min-width:320px)"
+              srcSet={`${heroImage1} 1x, ${heroImage1_2x} 2x`}
+            /> */}
