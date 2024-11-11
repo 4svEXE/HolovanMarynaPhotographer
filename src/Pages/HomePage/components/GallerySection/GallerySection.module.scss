@@ -1,17 +1,12 @@
 .gallerySection {
   .categoryButton {
-    border: 1px solid rgb(221, 230, 237);
+    // background: #fff;
     padding: 8px 24px;
     border-radius: 20px;
   }
 
-  .active {
-    background-color: rgb(221, 230, 237);
-    border-color: transparent;
-  }
-
   button.loadMoreBtn {
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: #000000;
     color: #ffffff;
 
