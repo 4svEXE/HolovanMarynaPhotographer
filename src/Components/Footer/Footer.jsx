@@ -1,4 +1,3 @@
-import Icon from "Components/Icon/Icon";
 import scss from "./Footer.module.scss";
 import { Link } from "react-router-dom";
 
