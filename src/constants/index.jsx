@@ -13,27 +13,6 @@ export const LANGUAGES = [
   },
 ];
 
-export const NAVIGATION = [
-  {
-    path: "services",
-    title: "Services",
-  },
-  {
-    path: "cases",
-    title: "Cases",
-  },
-  {
-    path: "team",
-    title: "Team",
-  },
-  {
-    path: "reviews",
-    title: "Reviews",
-  },
-  {
-    path: "contact",
-    title: "Contact",
-  },
-];
-
-export const baseHrefPrefix = ''
+export const options = {
+  publicKey:'p4-FfBap1o3c3v7T_',
+};
