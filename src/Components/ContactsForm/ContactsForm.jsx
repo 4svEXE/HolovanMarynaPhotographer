@@ -60,7 +60,7 @@ export default function ContactsForm() {
           validationSchema={contactSchema}
         >
           <Form
-            ref={form}
+            innerRef={form}
             className={`${scss.form} flex flex-col gap-10 mb-10`}
           >
             <div
