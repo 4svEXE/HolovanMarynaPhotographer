@@ -26,7 +26,7 @@ const FAQ = () => {
                       {item.question}
                     </button>
                   </h3>
-                  <p className="acItemIcon absolute right-2 top-9 xlg:top-14 xlg:right-4">
+                  <p className="acItemIcon absolute right-2 top-9 md:top-5 xlg:top-14 xlg:right-4">
                     +
                   </p>
                 </div>
