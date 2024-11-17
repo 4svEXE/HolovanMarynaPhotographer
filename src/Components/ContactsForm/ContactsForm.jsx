@@ -40,7 +40,12 @@ export default function ContactsForm() {
     actions.resetForm();
 
     try {
-      emailjs.sendForm("contact_service", "contact_form", form.current, options);
+      emailjs.sendForm(
+        "contact_service",
+        "contact_form",
+        form.current,
+        options
+      );
     } catch (error) {
       console.log(error);
     }
@@ -48,13 +53,16 @@ export default function ContactsForm() {
 
   return (
     <>
-      <div  className={`${scss.formContainer}`}>
+      <div className={`${scss.formContainer}`}>
         <Formik
           initialValues={initialValues}
           onSubmit={handleSubmit}
           validationSchema={contactSchema}
         >
-          <Form ref={form} className={`${scss.form} flex flex-col gap-10 mb-10`}>
+          <Form
+            innerRef={form}
+            className={`${scss.form} flex flex-col gap-10 mb-10`}
+          >
             <div
               className={`${scss.fieldsContainer} flex flex-col gap-10 xlg:flex-row xlg:justify-between`}
             >
@@ -65,6 +73,7 @@ export default function ContactsForm() {
                   name="name"
                   id={idForName}
                   placeholder={"Імя"}
+                  autocomplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -80,6 +89,7 @@ export default function ContactsForm() {
                   name="phone"
                   id={idForPhone}
                   placeholder={"Телефон"}
+                  autocomplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -96,6 +106,7 @@ export default function ContactsForm() {
                 name="email"
                 id={idForEmail}
                 placeholder={"Email"}
+                autocomplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
@@ -110,6 +121,7 @@ export default function ContactsForm() {
                 name="message"
                 id={idForMessage}
                 placeholder={"Повідомлення"}
+                autocomplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
