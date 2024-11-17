@@ -1,7 +1,10 @@
 import { nanoid } from "@reduxjs/toolkit";
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { options } from "constants";
 import scss from "./ModalForm.module.scss";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const contactSchema = Yup.object().shape({
   name: Yup.string()
@@ -16,22 +19,32 @@ const contactSchema = Yup.object().shape({
   message: Yup.string().max(100, "Занадто довго"),
 });
 
+const initialValues = {
+  name: "",
+  phone: "",
+  email: "",
+  message: "",
+};
+
 export default function ModalForm({ modalIsOpen, closeModal }) {
+  emailjs.init(options);
+  const form = useRef();
+
   const idForEmail = nanoid();
   const idForPhone = nanoid();
   const idForName = nanoid();
   const idForMessage = nanoid();
 
-  const initialValues = {
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  };
-
   const handleSubmit = (values, actions) => {
     console.log(values);
     actions.resetForm();
+
+    try {
+      emailjs.sendForm("contact_service", "contact_form", form.current, options);
+    } catch (error) {
+      console.log(error);
+    }
+
   };
 
   return (
@@ -42,7 +55,7 @@ export default function ModalForm({ modalIsOpen, closeModal }) {
           onSubmit={handleSubmit}
           validationSchema={contactSchema}
         >
-          <Form className={`${scss.form} flex flex-col gap-10 mb-10`}>
+          <Form ref={form} className={`${scss.form} flex flex-col gap-10 mb-10`}>
             <label htmlFor={idForName}>
               Ім&apos;я*
               <Field
