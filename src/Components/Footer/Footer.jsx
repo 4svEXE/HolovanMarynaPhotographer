@@ -1,5 +1,5 @@
-import Icon from "Components/Icon/Icon";
 import scss from "./Footer.module.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
               <a href="#aboutMe">Про мене</a>
             </li>
             <li>
-              <a href="#portfolio">Портфоліо</a>
+            <Link to={"HolovanMarynaPhotographer/portfolio"}>Портфоліо</Link>
             </li>
             <li>
               <a href="#contacts">Контакти</a>

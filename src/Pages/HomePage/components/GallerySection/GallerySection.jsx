@@ -127,7 +127,7 @@ const GallerySection = ({
 
         <div className="text-center">
           <Link
-            to={"portfolio"}
+            to={"/HolovanMarynaPhotographer/portfolio"}
             className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4`}
           >
             Дивитися більше

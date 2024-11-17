@@ -17,8 +17,8 @@ const Navigation = () => {
         <li className={`${location.pathname.includes("portfolio") ? css.checked : ""}`}>
           <Link to={"HolovanMarynaPhotographer/portfolio"}>Портфоліо</Link>
         </li>
-        <li className={`${location.pathname.includes("contacts") ? css.checked : ""}`}>
-          <Link to={"HolovanMarynaPhotographer/contacts"}>Контакти</Link>
+        <li className={``}>
+          <a href="#contacts">Контакти</a>
         </li>
       </ul>
     </nav>
