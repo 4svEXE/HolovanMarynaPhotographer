@@ -12,13 +12,13 @@ const Navigation = () => {
       <ul className={`${css.navList} flex gap-4`}>
         <li className={`${location.pathname.includes("home") ? css.checked : ""}`}>
           <Link className={css.checked} to={"HolovanMarynaPhotographer/home"}>
-          Про мене</Link>
+          {t("header.nav.AboutMe")}</Link>
         </li>
         <li className={`${location.pathname.includes("portfolio") ? css.checked : ""}`}>
-          <Link to={"HolovanMarynaPhotographer/portfolio"}>Портфоліо</Link>
+          <Link to={"HolovanMarynaPhotographer/portfolio"}>{t("header.nav.Portfolio")}</Link>
         </li>
         <li className={``}>
-          <a href="#contacts">Контакти</a>
+          <a href="#contacts">{t("header.nav.Contacts")}</a>
         </li>
       </ul>
     </nav>

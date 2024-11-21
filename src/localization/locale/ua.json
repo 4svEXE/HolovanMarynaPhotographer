@@ -1,7 +1,7 @@
 {
   "header": {
     "nav": {
-      "Home": "Про мене",
+      "AboutMe": "Про мене",
       "Portfolio": "Портфоліо",
       "Contacts": "Контакти"
     }
@@ -76,16 +76,13 @@
       }
     }
   },
-  "Footer": {
+  "footer": {
     "SiteNav": {
       "SiteNavTitle": "Головна",
-      "SiteNav": [
-        {
           "AboutMe": "Про мене",
           "Portfolio": "Портфоліо",
           "Contacts": "Контакти"
-        }
-      ]
+        
     },
     "SocialsListTite": "Соц. мережі",
     "ContactsListTite": "Контакти"

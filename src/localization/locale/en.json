@@ -1,7 +1,7 @@
 {
   "header": {
     "nav": {
-      "Home": "Home",
+      "AboutMe": "About me",
       "Portfolio": "Portfolio",
       "Contacts": "Contacts"
     }
@@ -76,16 +76,12 @@
       }
     }
   },
-  "Footer": {
+  "footer": {
     "SiteNav": {
       "SiteNavTitle": "Home",
-      "SiteNav": [
-        {
           "AboutMe": "About me",
           "Portfolio": "Portfolio",
           "Contacts": "Contacts"
-        }
-      ]
     },
     "SocialsListTite": "Socials",
     "ContactsListTite": "Contacts"
