@@ -13,23 +13,27 @@
     },
     "AboutMe": {
       "SectionTitle": "About me",
-      "AboutMeText": "My name is Maryna, I am a professional photographer. I specialize in portrait, couple and NY photography. I received an education in the field of photography and am constantly improving myself through courses and master classes. I take inspiration for my works from feature films and art, striving to create unique and emotionally rich shots for each client."
+      "AboutMeText1": "My name is Maryna, I am a professional photographer. I specialize in portrait, couple and NU photography. I received an education in the field of photography and am constantly improving myself through courses and master classes.",
+      "AboutMeText2":"I take inspiration for my works from feature films and art, striving to create unique and emotionally rich shots for each client."
     },
     "Portfolio": {
       "SectionTitle": "Portfolio",
-      "Categories": {
-        "All": "All",
-        "Portrait": "Portrait",
-        "LoveStory": "Love Story",
-        "Nude": "Nude"
-      }
+      "Categories": [
+        {"Category": "All"},
+        {"Category": "Portrait"},
+        {"Category": "Love Story"},
+        {"Category": "Nude"}
+      ],
+      "LoadMoreBtn":"Load More"
     },
     "Price": {
       "SectionTitle": "Price",
-      "Price": "Prive",
+      "Price": "Price",
       "Duration": "Duration",
       "PhotosInProcessing": "Photos in Processing",
-      "PrintPhoto": "Print photo"
+      "PrintPhoto": "Print photo",
+      "Minutes":"min",
+      "Pieces":"pcs"
     },
     "FAQ": [
       {

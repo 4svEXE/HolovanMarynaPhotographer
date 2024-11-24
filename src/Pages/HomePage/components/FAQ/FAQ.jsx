@@ -20,7 +20,6 @@ const FAQ = () => {
         <h2 className="text-center mb-10">FAQ</h2>
         <ul className={`accordion-container`}>
           {questionData.map((item, index) => {
-            console.log(item)
             return (
               <li
                 key={index}

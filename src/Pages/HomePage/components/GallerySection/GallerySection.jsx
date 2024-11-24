@@ -5,6 +5,8 @@ import galleryImage1_2x from "../../../../images/shared/mobile/Gallery-picture-1
 import galleryImage1Desktop from "../../../../images/shared/desktop/Gallery-picture-1.png";
 import galleryImage1_2xDesktop from "../../../../images/shared/desktop/Gallery-picture-1@2x.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import data from "../../../../localization/locale/ua.json";
 
 const GallerySection = ({
   categoriesContainer,
@@ -14,7 +16,9 @@ const GallerySection = ({
   categoryButton,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
-  const categories = ["Всі", "Портрет", "Love Story", "НЮ"];
+  const categories = data.homepage.Portfolio.Categories;
+  console.log(categories);
+  const { t } = useTranslation();
 
   return (
     <section
@@ -23,23 +27,26 @@ const GallerySection = ({
     >
       <div className="container">
         <div className={`${categoriesContainer}`}>
-          <h2 className="mb-8">Портфоліо</h2>
+          <h2 className="mb-8">{t("homepage.Portfolio.SectionTitle")}</h2>
           <div className={`overflow-x-scroll mb-10 ${categoriesList}`}>
             <ul className="w-max flex gap-2 ">
-              {categories.map((category) => (
-                <li key={category}>
-                  <button
-                    onClick={() => setSelectedCategory(category)}
-                    className={`${css.categoryButton} ${
-                      selectedCategory === category
-                        ? categoryBtnActive
-                        : categoryButton
-                    }`}
-                  >
-                    {category.charAt(0).toUpperCase() + category.slice(1)}
-                  </button>
-                </li>
-              ))}
+              {categories.map((category, index) => {
+                console.log(category)
+                return (
+                  <li key={index}>
+                    <button
+                      onClick={() => setSelectedCategory(category)}
+                      className={`${css.categoryButton} ${
+                        selectedCategory === category
+                          ? categoryBtnActive
+                          : categoryButton
+                      }`}
+                    >
+                      {t(`homepage.Portfolio.Categories.${index}.Category`)}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -130,7 +137,7 @@ const GallerySection = ({
             to={"/HolovanMarynaPhotographer/portfolio"}
             className={`${css.loadMoreBtn} p-3 leading-normal center text-center xlg:p-4`}
           >
-            Дивитися більше
+            {t("homepage.Portfolio.LoadMoreBtn")}
           </Link>
         </div>
       </div>
