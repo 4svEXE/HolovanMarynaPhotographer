@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const FAQ = () => {
   useEffect(() => {
     new Accordion(".accordion-container");
-  },[]);
+  },[])
 
   const {t} = useTranslation();
 

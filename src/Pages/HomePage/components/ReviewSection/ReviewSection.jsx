@@ -49,7 +49,7 @@ const ReviewSection = () => {
   return (
     <section className={`section relative pt-28`}>
       <div className={`container`}>
-        <h2 className="mb-32">Відгуки</h2>
+        <h2 className="mb-32">{t("homepage.Reviews.SectionTitle")}</h2>
         <div
           className={`swiper ${css.swiperConainer} flex flex-col justify-around items-center xlg:flex-row`}
         >
