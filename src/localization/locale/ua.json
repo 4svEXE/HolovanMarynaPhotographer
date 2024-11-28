@@ -75,8 +75,8 @@
     },
     "Contacts": {
       "SectionTitle": "Контакти",
+      "FormTitle": "Замовити фотосесію",
       "Form": {
-        "FormTitle": "Замовити фотосесію",
         "NameField": "Ім'я",
         "PhoneField": "Телефон",
         "EmailField": "Email",

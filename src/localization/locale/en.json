@@ -76,8 +76,8 @@
     },
     "Contacts": {
       "SectionTitle": "Contacts",
+      "FormTitle": "Order a photo session",
       "Form": {
-        "FormTitle": "Order a photo session",
         "NameField": "Name",
         "PhoneField": "Phone",
         "EmailField": "Email",
