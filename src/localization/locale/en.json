@@ -66,7 +66,13 @@
       }
     ],
     "Reviews": {
-      "SectionTitle": "Reviews"
+      "SectionTitle": "Reviews",
+      "AnnaReview":{
+        "Review":"It was my first photo session, I was afraid that I would be tied up and not be able to pose. But after meeting and consulting with Marina, all fears disappeared. I received many photos of various plans and now I can not worry about which photos to post on Instagram. And most importantly, I enjoyed the process! Thank you, Marina!",
+        "Reviewer":"Anya",
+        "ReviewerWork":"targetologist"
+      }
+
     },
     "Contacts": {
       "SectionTitle": "Contacts",

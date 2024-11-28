@@ -42,17 +42,17 @@ const PriceSection = () => {
               <h3>{service.name}</h3>
               <ul>
                 <li>
-                {t("homepage.Price.Price")}<span>{`${service.price}`} </span>
+                <p >{t("homepage.Price.Price")}</p><span>{`${service.price}`} </span>
                 </li>
                 <li>
-                {t("homepage.Price.Duration")}<span>{service.duration} {t("homepage.Price.Minutes")}</span>
+                <p >{t("homepage.Price.Duration")}</p><span>{service.duration} {t("homepage.Price.Minutes")}</span>
                 </li>
-                <li>
-                {t("homepage.Price.PhotosInProcessing")}<span>{service.photos} {t("homepage.Price.Pieces")}</span>
+                <li className="flex items-center">
+                <p className="lg:w-1/2">{t("homepage.Price.PhotosInProcessing")}</p><span>{service.photos} {t("homepage.Price.Pieces")}</span>
                 </li>
                 {service.printPhotos && (
                   <li>
-                    {t("homepage.Price.PrintPhoto")}<span>{service.printPhotos} {t("homepage.Price.Pieces")}</span>
+                    <p >{t("homepage.Price.PrintPhoto")}</p><span>{service.printPhotos} {t("homepage.Price.Pieces")}</span>
                   </li>
                 )}
               </ul>

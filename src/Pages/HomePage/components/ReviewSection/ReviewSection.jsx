@@ -91,11 +91,6 @@ const ReviewSection = () => {
 
         </div>
       </div>
-      {/* <div className="absolute bottom-0 left-0 -z-50">
-        <svg className="w-full h-96">
-          <use className={css.bg} href={`${icons}#reviews-bg`}/>
-        </svg>
-      </div> */}
       <div className="absolute bottom-0 left-0 -z-50 xlg:w-full">
         <picture>
           <source media="(min-width:1400px)"
