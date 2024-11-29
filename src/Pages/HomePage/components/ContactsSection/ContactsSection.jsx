@@ -3,8 +3,10 @@ import scss from "./ContactsSection.module.scss";
 import SocialsList from "Components/SocialsList/SocialsList";
 import Icon from "Components/Icon/Icon";
 import svg from "../../../../images/favicon/icons.svg";
+import { useTranslation } from "react-i18next";
 
 const ContactsSection = ({section}) => {
+  const {t} = useTranslation();
   return (
     <section
       id="contacts"
@@ -12,8 +14,8 @@ const ContactsSection = ({section}) => {
     >
       <div className={`container md:flex md:justify-between`}>
         <div className="md:w-1/2">
-          <h2 className="mb-10 md:mb-20">Контакти</h2>
-          <h3 className="mb-6 md:mb-8">Замовити фотосесію</h3>
+          <h2 className="mb-10 md:mb-20">{t("homepage.Contacts.SectionTitle")}</h2>
+          <h3 className="mb-6 md:mb-8">{t("homepage.Contacts.FormTitle")}</h3>
           <ContactsForm></ContactsForm>
         </div>
         <div className="mt-52 md:mt-24 xlg:mt-28">
