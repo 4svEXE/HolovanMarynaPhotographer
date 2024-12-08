@@ -4,6 +4,7 @@ import LocalizationList from "Components/LocalizationList/LocalizationList";
 import css from "./AppBar.module.scss";
 import MobileMenu from "Components/MobileMenu/MobileMenu";
 import { useState,useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const AppBar = () => {
 

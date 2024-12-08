@@ -2,7 +2,7 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import css from "./ReviewSection.module.scss";
-import icons from '../../../../images/favicon/icons.svg';
+import icons from "../../../../images/favicon/icons.svg";
 
 import Icon from "Components/Icon/Icon";
 import ReviewerItem from "Components/ReviewerItem/ReviewerItem";
@@ -13,40 +13,31 @@ import bgDesktop from "../../../../images/shared/desktop/backgrounds/reviews-bg.
 
 import reviewer from "../../../../images/shared/mobile/reviews-section-photo.png";
 import { useEffect } from "react";
-
-
-const reviews = [
-  {
-    name: "Аня",
-    profession: "таргетолог",
-    review:
-      "Це була моя перша фотосесія, мене лякало, що я буду скована і не зможу позувати. Але після знайомства і консультації з Мариною, всі страхи розвіялись. Я отримала багато фото різного плана і тепер можу не заморочувати голову, які фото викласти в Інстаграм. А саме головне — я отримала задоволення від процесу! Дякую, Марина!",
-    picture: { reviewer },
-  },
-  {
-    name: "Аня",
-    profession: "таргетолог",
-    review:
-      "Це була моя перша фотосесія, мене лякало, що я буду скована і не зможу позувати. Але після знайомства і консультації з Мариною, всі страхи розвіялись. Я отримала багато фото різного плана і тепер можу не заморочувати голову, які фото викласти в Інстаграм. А саме головне — я отримала задоволення від процесу! Дякую, Марина!",
-    picture: { reviewer },
-  },
-  {
-    name: "Аня",
-    profession: "таргетолог",
-    review:
-      "Це була моя перша фотосесія, мене лякало, що я буду скована і не зможу позувати. Але після знайомства і консультації з Мариною, всі страхи розвіялись. Я отримала багато фото різного плана і тепер можу не заморочувати голову, які фото викласти в Інстаграм. А саме головне — я отримала задоволення від процесу! Дякую, Марина!",
-    picture: { reviewer },
-  },
-
-  
-];
+import { useTranslation } from "react-i18next";
 
 const ReviewSection = () => {
-  useEffect(()=>{
+  const { t } = useTranslation();
+
+  const reviews = [
+    {
+      name: `${t("homepage.Reviews.AnnaReview.Reviewer")}`,
+      profession: `${t("homepage.Reviews.AnnaReview.ReviewerWork")}`,
+      review: `${t("homepage.Reviews.AnnaReview.Review")}`,
+      picture: { reviewer },
+    },
+    {
+      name: `${t("homepage.Reviews.AnnaReview.Reviewer")}`,
+      profession: `${t("homepage.Reviews.AnnaReview.ReviewerWork")}`,
+      review: `${t("homepage.Reviews.AnnaReview.Review")}`,
+      picture: { reviewer },
+    },
+  ];
+
+  useEffect(() => {
     const swiper = new Swiper(".swiper", {
       // configure Swiper to use modules
       modules: [Navigation],
-    
+
       direction: "horizontal",
       loop: true,
       navigation: {
@@ -54,14 +45,14 @@ const ReviewSection = () => {
         prevEl: ".swiper-button-prev",
       },
     });
-  
-  },[]);
+  }, []);
   return (
     <section className={`section relative pt-28`}>
       <div className={`container`}>
-        <h2 className="mb-32">Відгуки</h2>
-        <div className={`swiper ${css.swiperConainer} flex flex-col justify-around items-center xlg:flex-row`}>
-
+        <h2 className="mb-32">{t("homepage.Reviews.SectionTitle")}</h2>
+        <div
+          className={`swiper ${css.swiperConainer} flex flex-col justify-around items-center xlg:flex-row`}
+        >
           <div className="swiper-button-prev absolute left-20 top-3/4 hidden xlg:block">
             <Icon id={"arrow-black"} width={23} height={23}></Icon>
           </div>
@@ -69,7 +60,10 @@ const ReviewSection = () => {
           <ul className={`swiper-wrapper mb-5 xlg:mb-0`}>
             {reviews.map((item, index) => {
               return (
-                <li key={index} className={`swiper-slide flex flex-col items-center w-full md:flex-row md:justify-between`}>
+                <li
+                  key={index}
+                  className={`swiper-slide flex flex-col items-center w-full md:flex-row md:justify-between`}
+                >
                   <ReviewerItem data={item}></ReviewerItem>
                 </li>
               );
@@ -85,21 +79,16 @@ const ReviewSection = () => {
             </div>
           </div>
 
-          <div className={`swiper-button-next ${css.navBtnNext} absolute right-20 top-3/4 hidden xlg:block`}>
+          <div
+            className={`swiper-button-next ${css.navBtnNext} absolute right-20 top-3/4 hidden xlg:block`}
+          >
             <Icon id={"arrow-black"} width={23} height={23}></Icon>
           </div>
-
         </div>
       </div>
-      {/* <div className="absolute bottom-0 left-0 -z-50">
-        <svg className="w-full h-96">
-          <use className={css.bg} href={`${icons}#reviews-bg`}/>
-        </svg>
-      </div> */}
       <div className="absolute bottom-0 left-0 -z-50 xlg:w-full">
         <picture>
-          <source media="(min-width:1400px)"
-          srcSet={bgDesktop}/>
+          <source media="(min-width:1400px)" srcSet={bgDesktop} />
           <img className={css.bg} src={bgMobile} srcSet={bgMobile2x} alt="" />
         </picture>
       </div>

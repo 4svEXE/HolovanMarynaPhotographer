@@ -1,86 +1,99 @@
 {
   "header": {
     "nav": {
-      "Home": "Home CZ",
-      "Services": "Services",
-      "Cases": "Cases",
-      "Team": "Team",
-      "Reviews": "Reviews",
-      "Contact": "Contact",
-      "Guides": "Guides"
-    },
-    "themes": {
-      "white": "Light",
-      "dark": "Dark"
+      "AboutMe": "O mně",
+      "Portfolio": "Portfolio",
+      "Contacts": "Kontakty"
     }
   },
   "homepage": {
-    "SoftwareAndBlockchain": "Software and Blockchain",
-    "development": "development",
-    "ContactUs": "Contact Us",
-    "technologies": "technologies",
-    "clients": "clients",
-    "projects": "projects",
-    "Services": "Services",
-    "Blockchain": "Blockchain & IT Consultancy",
-    "Decentralized": "Decentralized Application Development",
-    "Fullstack": "Fullstack Software development",
-    "Smart": "Smart Contract Development",
-    "MVP": "MVP Development",
-    "BackEnd": "Back-end Development",
-    "NFT": "NFT Project Development",
-    "Cloud": "Cloud (serverless) solutions",
-    "FrontEnd": "Front-end Development",
-    "Cases": "Cases",
-    "AllCases": "All 5+ cases",
-    "MASDMarketplace": "MASD Marketplace",
-    "MASDMarketplaceText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they",
-    "GameDesignDevelopment": "Game design & Development",
-    "GameDesignDevelopmentText": "Developing a BSC game in which players earn from the sale of in-game assets and developers receive a commission from each transaction, thus creating a 'win-win' scenario.",
-    "GameDesignDevelopmentText2": "A unique crypto project: the client gets a printer that prints dollars. The more tokens put into it, the more it prints. The resulting money can be exchanged inside the game for various perks. The project was done using react.js on the front-end and node.js on the back-end. The database we used was PostgreSQL. Solidity was used to write smart contracts.",
-    "WebDevelopment": "Web Development",
-    "WebDevelopmentText": "ManusCRYPT is a marketplace where various NFTs are posted and users can purchase them at an appropriate price. Each NFT is described and detailed on the site.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was MongoDB. Solidity was used to create smart contracts.",
-    "OurTechnology": {
-      "title": "Our Technology",
-      "Blockchain": "Blockchain",
-      "BlockchainText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
-      "FrontEnd": "Front-End",
-      "FrontEndText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
-      "BackEnd": "Back-End",
-      "BackEndText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity.",
-      "Cloud": "Cloud",
-      "CloudText": "The first NFT marketplace that allows creators to select and embed licenses when they print NFTs. Creators know what they are selling, collectors know what they are buying.The project was done using react.js technology on the front-end, and using node.js on the back end. The database chosen for development was mongodb. Using Solidity."
+    "Hero": {
+      "PageSubTitle": "Váš příběh na každé fotce",
+      "SignUpButton": "Zaregistrujte se"
     },
-    "Team": {
-      "title": "Team",
-      "MykhailoAdzhoieve": "Mykhailo Adzhoieve",
-      "AleksandreaKharchenko": "Aleksandrea Kharchenko",
-      "BohdanSolomakha": "Bohdan Solomakha",
-      "ViacheslavIvchenko": "Viacheslav Ivchenko",
-      "JuriErmakov": "Juri Ermakov",
-      "VladyslavFit": "Vladyslav Fit"
+    "AboutMe": {
+      "SectionTitle": "O mně",
+      "AboutMeText1": "Jmenuji se Marina a jsem profesionální fotografka. Specializuji se na portrétní, párovou a NY fotografii. Získal jsem vzdělání v oboru fotografie a neustále se zdokonaluji prostřednictvím kurzů a mistrovských kurzů.",
+      "AboutMeText2": "Inspiraci pro svá díla čerpám z hraných filmů a umění a snažím se vytvořit jedinečné a emocionálně bohaté záběry pro každého klienta."
     },
-    "Revives": {
-      "title": "Revives",
-      "Great_developer": "Great developer. I highly recommend his service to others.",
-      "Avalanche": "Avalanche (AVAX) Game-Fi Project, Fullstack blockchain Development",
-      "Artem_is_a": "Artem is a very professional and nice person to work with. I really enjoyed working with him. Thanks...",
-      "Traveldise": "Traveldise, Project Manager",
-      "Mykhailo_is": "Mykhailo is a high-level specialist that has deep knowledge in blockchain as well as proven expertise in .NET development. He understands requirements clearly and can assist in system architecture development. Would recommend to anyone!",
-      "Etherium_Blockchain": "Etherium Blockchain and .net Consultant, Senior Developer"
+    "Portfolio": {
+      "SectionTitle": "Portfolio",
+      "Categories": [
+        { "Category": "Vše" },
+        { "Category": "Portrét" },
+        { "Category": "Milostný příběh" },
+        { "Category": "akt" }
+      ],
+      "LoadMoreBtn":"Zobrazit více"
     },
-    "Footer": {
-      "ContactUs": "Contact Us",
-      "ChatUsOnBlockchain": "Chat us on Blockchain",
-      "Copied": "Copied"
-    }
-  },
-  "videoGuides": {
-    "cards": {
-      "card1": {
-        "title": "Our Technologys",
-        "description": "Blockchain, React.js, Node.js, MongoDB, Solidity"
+    "Price": {
+      "SectionTitle": "Cena",
+      "Price": "Cena",
+      "Duration": "Trvání",
+      "PhotosInProcessing": "Foto ve zpracování",
+      "PrintPhoto": "Vytisknout fotografii",
+      "Minutes":"min",
+      "Pieces":"kus"
+    },
+    "FAQ": [
+      {
+        "question": "Jak si mohu zarezervovat focení?",
+        "answer": "Focení si můžete zarezervovat tak, že mě kontaktujete přes kontaktní formulář na webu, zavoláte nebo pošlete e-mail. Dohodneme pro vás vhodný čas a detaily focení."
+      },
+      {
+        "question": "Jak dlouho trvá zpracování fotografií?",
+        "answer": "Zpracování fotografií obvykle trvá 1 až 2 týdny v závislosti na rozsahu prací a zvoleném balíčku služeb. Klienty vždy v době focení informuji o předpokládaném termínu."
+      },
+      {
+        "question": "Mohu si objednat fotografie k tisku?",
+        "answer": "Ano, nabízím služby tisku fotografií na vysoce kvalitní fotografický papír. Můžete si vybrat různé formáty a materiály pro tisk, když to proberete při objednávce."
+      },
+      {
+        "question": "Jaké jsou vaše ceny za focení?",
+        "answer": "Ceny závisí na typu focení a délce. Podrobný ceník naleznete na mých stránkách v sekci \"Cena\" nebo mě kontaktujte přímo."
+      },
+      {
+        "question": "Jak získám své fotografie?",
+        "answer": "Po dokončení zpracování budou fotografie k dispozici ke stažení prostřednictvím zabezpečeného online alba nebo poskytnuty na flash disku, jak si budete přát."
+      },
+      {
+        "question": "Mohu si vybrat místo pro focení?",
+        "answer": "Ano, můžete mi navrhnout své oblíbené místo pro focení, nebo mohu nabídnout několik možností na výběr podle vašeho přání a tématu focení."
+      },
+      {
+        "question": "Je možné objednat dárkový poukaz na focení?",
+        "answer": "Ano, nabízím dárkové poukazy na focení. Je to skvělý dárek pro vaše blízké k jakémukoli svátku. Certifikát je možné objednat přes můj web nebo mě osobně kontaktovat."
+      }
+    ],
+    "Reviews": {
+      "SectionTitle": "Recenze",
+      "AnnaReview":{
+        "Review":"Bylo to moje první focení, bála jsem se, že budu svázaná a nebudu moct pózovat. Ale po setkání a poradě s Marinou všechny obavy zmizely. Dostal jsem mnoho fotek různých plánů a teď se nemůžu starat o to, které fotky zveřejnit na Instagramu. A hlavně jsem si ten proces užil! Děkuji, Marina!",
+        "Reviewer":"Anya",
+        "ReviewerWork":"cílený marketér"
+      }
+    },
+    "Contacts": {
+      "SectionTitle": "Kontakty",
+      "FormTitle": "Objednejte si focení",
+      "Form": {
+        "NameField": "Jméno",
+        "PhoneField": "Telefon",
+        "EmailField": "E-mail",
+        "MessageField": "Zpráva",
+        "SendBtn": "Poslat"
       }
     }
+  },
+  "footer": {
+    "SiteNav": {
+      "SiteNavTitle": "Domov",
+          "AboutMe": "O mně",
+          "Portfolio": "Portfolio",
+          "Contacts": "Kontakty"
+    },
+    "SocialsListTite": "Sociální sítě",
+    "ContactsListTite": "Kontakty"
   }
+
 }
