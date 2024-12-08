@@ -75,7 +75,7 @@ export default function ContactsForm() {
                   name="name"
                   id={idForName}
                   placeholder={`${t("homepage.Contacts.Form.NameField")}`}
-                  autocomplete={"off"}
+                  autoComplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -89,9 +89,12 @@ export default function ContactsForm() {
                   as="input"
                   type="number"
                   name="phone"
+                  step={"any"}
+                  inputMode="numeric"
+                  min="0"
                   id={idForPhone}
                   placeholder={`${t("homepage.Contacts.Form.PhoneField")}`}
-                  autocomplete={"off"}
+                  autoComplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -108,7 +111,7 @@ export default function ContactsForm() {
                 name="email"
                 id={idForEmail}
                 placeholder={`${t("homepage.Contacts.Form.EmailField")}`}
-                autocomplete={"off"}
+                autoComplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
@@ -123,7 +126,7 @@ export default function ContactsForm() {
                 name="message"
                 id={idForMessage}
                 placeholder={`${t("homepage.Contacts.Form.MessageField")}`}
-                autocomplete={"off"}
+                autoComplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
