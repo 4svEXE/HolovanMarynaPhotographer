@@ -60,6 +60,9 @@ section {
   border-left: none;
 
   background-color: transparent;
+  &.active .acItemIcon {
+    transform: rotate(45deg); /* Змінює "+" на "×" */
+  }
 }
 .ac:last-child {
   border-bottom: 1px solid rgba(101, 100, 100, 1);
@@ -99,6 +102,12 @@ section {
   color: rgba(101, 100, 100, 1);
 
 }
+.ac-panel {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.3s ease;
+}
+
 .ac .ac-trigger:focus {
   color: #111;
 }

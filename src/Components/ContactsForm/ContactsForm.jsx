@@ -5,6 +5,7 @@ import scss from "./ContactsForm.module.scss";
 import { options } from "constants";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const contactSchema = Yup.object().shape({
   name: Yup.string()
@@ -27,6 +28,7 @@ const initialValues = {
 };
 
 export default function ContactsForm() {
+  const {t} = useTranslation();
   emailjs.init(options);
   const form = useRef();
 
@@ -72,8 +74,8 @@ export default function ContactsForm() {
                   as="input"
                   name="name"
                   id={idForName}
-                  placeholder={"Імя"}
-                  autocomplete={"off"}
+                  placeholder={`${t("homepage.Contacts.Form.NameField")}`}
+                  autoComplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -87,9 +89,12 @@ export default function ContactsForm() {
                   as="input"
                   type="number"
                   name="phone"
+                  step={"any"}
+                  inputMode="numeric"
+                  min="0"
                   id={idForPhone}
-                  placeholder={"Телефон"}
-                  autocomplete={"off"}
+                  placeholder={`${t("homepage.Contacts.Form.PhoneField")}`}
+                  autoComplete={"off"}
                 />
                 <ErrorMessage
                   className={scss.error}
@@ -105,8 +110,8 @@ export default function ContactsForm() {
                 type="email"
                 name="email"
                 id={idForEmail}
-                placeholder={"Email"}
-                autocomplete={"off"}
+                placeholder={`${t("homepage.Contacts.Form.EmailField")}`}
+                autoComplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
@@ -120,8 +125,8 @@ export default function ContactsForm() {
                 as="input"
                 name="message"
                 id={idForMessage}
-                placeholder={"Повідомлення"}
-                autocomplete={"off"}
+                placeholder={`${t("homepage.Contacts.Form.MessageField")}`}
+                autoComplete={"off"}
               />
               <ErrorMessage
                 className={scss.error}
@@ -134,7 +139,7 @@ export default function ContactsForm() {
               type={"submit"}
               className={`${scss.submitBtn} bg-black p-3 text-white w-28 mx-auto md:mr-0`}
             >
-              Надіслати
+              {`${t("homepage.Contacts.Form.SendBtn")}`}
             </button>
           </Form>
         </Formik>
