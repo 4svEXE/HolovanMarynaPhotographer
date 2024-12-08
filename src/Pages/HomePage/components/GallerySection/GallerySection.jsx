@@ -17,7 +17,6 @@ const GallerySection = ({
 }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const categories = data.homepage.Portfolio.Categories;
-  console.log(categories);
   const { t } = useTranslation();
 
   return (
@@ -31,7 +30,6 @@ const GallerySection = ({
           <div className={`overflow-x-scroll mb-10 ${categoriesList}`}>
             <ul className="w-max flex gap-2 ">
               {categories.map((category, index) => {
-                console.log(category)
                 return (
                   <li key={index}>
                     <button
