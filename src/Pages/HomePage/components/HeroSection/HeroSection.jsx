@@ -32,7 +32,7 @@ const HeroSection = () => {
       className={`section ${css.heroSection} pt-32 md:flex md:pb-20 md:bg-right-bottom xlg:px-20 md:overflow-visible`}
     >
       <div
-        className={`container pb-80 md:flex md:pb-0 xlg:justify-between xlg:pt-32 `}
+        className={`container ssm:pb-20 md:flex md:pb-0 xlg:justify-between xlg:pt-32 `}
       >
         <div className="md:w-1/2 xlg:flex xlg:flex-col">
           <h1 className={`flex flex-col xlg:w-96`}>
@@ -68,9 +68,9 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`${css.imageContainer} flex absolute bottom-12 -right-7 sm:bottom-20 sm:-right-1 xlg:bottom-1/3`}>
+        <div className={`${css.imageContainer} ssm:mt-28 md:-right-16 md:mt-20 xlg:mt-0 xlg:-right-28`}>
 
-          <picture className="w-full">
+          <picture className="w-full relative bottom-left">
             <source
               media="(min-width: 1440px)"
               srcSet={`${heroImage1_desktop} 1x, ${heroImage1_desktop_2x} 2x`}
@@ -82,7 +82,7 @@ const HeroSection = () => {
             />
           </picture>
 
-          <picture className="w-full relative top-4 xlg:top-10">
+          <picture className="w-full relative top-right">
             <source
               media="(min-width: 1440px)"
               srcSet={`${heroImage1_desktop} 1x, ${heroImage1_desktop_2x} 2x`}
@@ -97,14 +97,14 @@ const HeroSection = () => {
 
         </div>
 
-        <div className={`absolute -z-10 -bottom-7 right-0 flex justify-center md:justify-end xm:w-full`}>
+        <div className={`absolute -z-10 bottom-0 md:right-0 lg:-bottom-20 lg:-right-56 xlg:-bottom-0 xlg:right-0`}>
           <picture>
             <source
-              media="(min-width: 1440px)"
+              media="(min-width: 1024px)"
               srcSet={`${heroBgDesktop} 1x, ${heroBg2xDesktop} 2x`}
             />
             <img
-            className="xm:right-0"
+              className="xm:right-0 xlg:w-full"
               src={heroImage1}
               srcSet={`${heroBgMobile} 1x, ${heroBg2xMobile} 2x`}
               alt=""
@@ -118,8 +118,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-            {/* <source
-              media="(min-width:320px)"
-              srcSet={`${heroImage1} 1x, ${heroImage1_2x} 2x`}
-            /> */}

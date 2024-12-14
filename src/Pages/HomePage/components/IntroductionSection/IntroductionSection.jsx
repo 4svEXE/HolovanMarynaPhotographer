@@ -19,7 +19,7 @@ const IntroductionSection = () => {
           {t("homepage.AboutMe.AboutMeText2")}
           </p>
         </div>
-        <picture className="mx-auto flex justify-center -rotate-12 md:h-64 xlg:h-72">
+        <picture className="mx-auto relative top-left bottom-right flex justify-center -rotate-12 md:h-64 xlg:h-72">
           <source
             media="(min-width:1440px)"
             srcSet={`${heroImageDesktop} 1x,${heroImageDesktop2x} 2x`}
