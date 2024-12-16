@@ -132,7 +132,7 @@ section {
 
   position: absolute;
   bottom: -20px;
-  right: -5px;
+  right: 9px;
 
   background: url(./images/shared/mobile/backgrounds/image-bar-big.svg),
     url(./images/shared/mobile/backgrounds/image-bar-small.svg);
@@ -152,7 +152,7 @@ section {
   display: block;
 
   position: absolute;
-  bottom: -20px;
+  bottom: 5px;
   left: -20px;
 
   background: url(./images/shared/mobile/backgrounds/image-bar-big.svg),
@@ -195,7 +195,7 @@ section {
 
   position: absolute;
   top: -20px;
-  left: -5px;
+  left: 8px;
 
   background: url(./images/shared/mobile/backgrounds/image-bar-big.svg),
     url(./images/shared/mobile/backgrounds/image-bar-small.svg);
@@ -216,6 +216,14 @@ section {
     max-width: none;
     width: 340px;
     margin: 0 auto;
+  }
+
+  .top-left::before{
+    left: -5px;
+  }
+
+  .bottom-right::after{
+    right: -5px;
   }
 }
 
