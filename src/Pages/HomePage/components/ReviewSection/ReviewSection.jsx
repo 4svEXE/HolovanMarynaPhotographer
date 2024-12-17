@@ -1,8 +1,7 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import css from "./ReviewSection.module.scss";
-import icons from "../../../../images/favicon/icons.svg";
 
 import Icon from "Components/Icon/Icon";
 import ReviewerItem from "Components/ReviewerItem/ReviewerItem";
@@ -62,7 +61,7 @@ const ReviewSection = () => {
               return (
                 <li
                   key={index}
-                  className={`swiper-slide flex flex-col items-center w-full md:flex-row md:justify-between`}
+                  className={`${css.reviewerItem} swiper-slide flex flex-col items-center w-full md:flex-row md:justify-between`}
                 >
                   <ReviewerItem data={item}></ReviewerItem>
                 </li>
