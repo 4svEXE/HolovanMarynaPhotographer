@@ -5,5 +5,95 @@
       "Portfolio": "Portfolio",
       "Contacts": "Contacts"
     }
+  },
+  "homepage": {
+    "Hero": {
+      "PageSubTitle": "Your story in every photo",
+      "SignUpButton": "Sign up"
+    },
+    "AboutMe": {
+      "SectionTitle": "About me",
+      "AboutMeText1": "My name is Maryna, I am a professional photographer. I specialize in portrait, couple and NU photography. I received an education in the field of photography and am constantly improving myself through courses and master classes.",
+      "AboutMeText2":"I take inspiration for my works from feature films and art, striving to create unique and emotionally rich shots for each client."
+    },
+    "Portfolio": {
+      "SectionTitle": "Portfolio",
+      "Categories": [
+        {"Category": "All"},
+        {"Category": "Portrait"},
+        {"Category": "Love Story"},
+        {"Category": "Nude"}
+      ],
+      "LoadMoreBtn":"Load More"
+    },
+    "Price": {
+      "SectionTitle": "Price",
+      "Price": "Price",
+      "Duration": "Duration",
+      "PhotosInProcessing": "Photos in Processing",
+      "PrintPhoto": "Print photo",
+      "Minutes":"min",
+      "Pieces":"pcs"
+    },
+    "FAQ": [
+      {
+        "question": "How can I book a photo session?",
+        "answer": "You can book a photo session by contacting me through the contact form on the website, by calling or sending an email. We will agree on a convenient time and shooting details for you."
+      },
+      {
+        "question": "How long does it take to process photos?",
+        "answer": "Photo processing usually takes 1 to 2 weeks, depending on the scope of work and the selected service package. I always inform clients of the expected deadline at the time of the shoot."
+      },
+      {
+        "question": "Can I order photos to be printed?",
+        "answer": "Yes, I offer photo printing services on high quality photo paper. You can choose different formats and materials for printing by discussing this at the time of ordering."
+      },
+      {
+        "question": "What are your prices for photo sessions?",
+        "answer": "Prices depend on the type of photo session and duration. A detailed price list can be found on my website in the \"Price\" section or by contacting me directly."
+      },
+      {
+        "question": "How do I get my photos?",
+        "answer": "Once processing is complete, the photos will be available for download via a secure online album or provided on a flash drive, as you wish."
+      },
+      {
+        "question": "Can I choose a place for a photo session?",
+        "answer": "Yes, you can suggest your favorite location for the photo shoot, or I can offer several options to choose from, based on your wishes and the theme of the shoot."
+      },
+      {
+        "question": "Is it possible to order a gift certificate for a photo session?",
+        "answer": "Yes, I offer photo shoot gift certificates. This is a great gift for your loved ones for any holiday. The certificate can be ordered through my website or by contacting me personally."
+      }
+    ],
+    "Reviews": {
+      "SectionTitle": "Reviews",
+      "AnnaReview":{
+        "Review":"It was my first photo session, I was afraid that I would be tied up and not be able to pose. But after meeting and consulting with Marina, all fears disappeared. I received many photos of various plans and now I can not worry about which photos to post on Instagram. And most importantly, I enjoyed the process! Thank you, Marina!",
+        "Reviewer":"Anya",
+        "ReviewerWork":"targetologist"
+      }
+
+    },
+    "Contacts": {
+      "SectionTitle": "Contacts",
+      "FormTitle": "Order a photo session",
+      "Form": {
+        "NameField": "Name",
+        "PhoneField": "Phone",
+        "EmailField": "Email",
+        "MessageField": "message",
+        "SendBtn": "Send"
+      }
+    }
+  },
+  "footer": {
+    "SiteNav": {
+      "SiteNavTitle": "Home",
+          "AboutMe": "About me",
+          "Portfolio": "Portfolio",
+          "Contacts": "Contacts"
+    },
+    "SocialsListTite": "Socials",
+    "ContactsListTite": "Contacts"
   }
 }

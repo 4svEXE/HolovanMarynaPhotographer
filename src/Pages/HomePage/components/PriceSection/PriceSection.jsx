@@ -1,30 +1,33 @@
 import css from "./PriceSection.module.scss";
+import { useTranslation } from "react-i18next";
 
 const services = [
   {
     name: "Express",
     price: "500 кс",
-    duration: "30 хв",
-    photos: "5 шт",
+    duration: `30`,
+    photos: "5",
     printPhotos: null,
   },
   {
     name: "Standart",
     price: "1500 кс",
-    duration: "60 хв",
-    photos: "15 шт",
-    printPhotos: "5 шт",
+    duration: "60",
+    photos: "15",
+    printPhotos: "5",
   },
   {
     name: "Premium",
     price: "2 500 кс",
-    duration: "90 хв",
-    photos: "25 шт",
-    printPhotos: "15 шт",
+    duration: "90",
+    photos: "25",
+    printPhotos: "15",
   },
 ];
 
 const PriceSection = () => {
+  const {t} = useTranslation();
+
   return (
     <section className={`section ${css.priceSection}`}>
       <div className="container">
@@ -39,17 +42,17 @@ const PriceSection = () => {
               <h3>{service.name}</h3>
               <ul>
                 <li>
-                  Ціна <span>{service.price}</span>
+                <p >{t("homepage.Price.Price")}</p><span>{`${service.price}`} </span>
                 </li>
                 <li>
-                  Тривалість <span>{service.duration}</span>
+                <p >{t("homepage.Price.Duration")}</p><span>{service.duration} {t("homepage.Price.Minutes")}</span>
                 </li>
-                <li>
-                  Фото в обробці <span>{service.photos}</span>
+                <li className="flex items-center">
+                <p className="lg:w-1/2">{t("homepage.Price.PhotosInProcessing")}</p><span>{service.photos} {t("homepage.Price.Pieces")}</span>
                 </li>
                 {service.printPhotos && (
                   <li>
-                    Фото в друк <span>{service.printPhotos}</span>
+                    <p >{t("homepage.Price.PrintPhoto")}</p><span>{service.printPhotos} {t("homepage.Price.Pieces")}</span>
                   </li>
                 )}
               </ul>

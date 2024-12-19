@@ -20,9 +20,9 @@ i18next
       en: {
         translation: en,
       },
-      cz: {
-        translation: cz,
-      },
+      // cz: {
+      //   translation: cz,
+      // },
       ua: {
         translation: ua,
       },

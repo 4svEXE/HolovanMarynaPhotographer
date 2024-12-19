@@ -10,6 +10,7 @@ import heroBgDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg
 import heroBg2xDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop@2x.png";
 import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-desktop.png";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import RegisterModal from "Components/RegisterModal/RegisterModal";
 
 
@@ -23,6 +24,8 @@ const HeroSection = () => {
   const closeModal = () => {
     setModalIsOpen(false);
   };
+
+  const {t} = useTranslation();
 
   return (
     <section
@@ -40,12 +43,12 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-right relative xlg:text-center xlg:text-base xlg:left-7">
-            Ваша історія в кожній фотографії
+            {t("homepage.Hero.PageSubTitle")}
           </p>
 
           <div className="flex flex-row justify-between xlg:mt-auto xlg:justify-normal">
             <button className="flex gap-2 items-center self-end" onClick={()=>openModal()}>
-              Записатися
+              {t("homepage.Hero.SignUpButton")}
               <Icon id={"arrow-white"} width={13} height={13} />
             </button>
             <div className="relative right-5 md:hidden">
