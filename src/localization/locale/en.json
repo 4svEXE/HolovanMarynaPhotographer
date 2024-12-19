@@ -81,7 +81,7 @@
         "NameField": "Name",
         "PhoneField": "Phone",
         "EmailField": "Email",
-        "MessageField": "message",
+        "MessageField": "Message",
         "SendBtn": "Send"
       }
     }
