@@ -1,6 +1,6 @@
 import css from "./IntroductionSection.module.scss";
-import heroImage from "../../../../images/shared/mobile/hero-mobile.png";
-import heroImage2x from "../../../../images/shared/mobile/hero-mobile@2x.png";
+import heroImage from "../../../../images/shared/mobile/intro/hero-mobile.png";
+import heroImage2x from "../../../../images/shared/mobile/intro/hero-mobile@2x.png";
 import heroImageDesktop from "../../../../images/shared/desktop/hero-desktop.png";
 import heroImageDesktop2x from "../../../../images/shared/desktop/hero-desktop@2x.png";
 import { useTranslation } from "react-i18next";
@@ -19,7 +19,7 @@ const IntroductionSection = () => {
           {t("homepage.AboutMe.AboutMeText2")}
           </p>
         </div>
-        <picture className="mx-auto flex justify-center -rotate-12 md:h-64 xlg:h-72">
+        <picture className="ssm:h-48 sm:h-auto mx-auto relative top-left bottom-right flex justify-center -rotate-12 md:h-64 xlg:h-72">
           <source
             media="(min-width:1440px)"
             srcSet={`${heroImageDesktop} 1x,${heroImageDesktop2x} 2x`}

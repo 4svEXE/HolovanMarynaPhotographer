@@ -1,58 +1,65 @@
-.heroSection{
-    // overflow-x: hidden;
-    position: relative;
+.heroSection {
+  // overflow-x: hidden;
+  position: relative;
 
-    h1{
-        font-size: 67px;
-        line-height: 1;    
-    }
+  h1 {
+    font-size: 67px;
+    line-height: 1;
+  }
 
-    p{
-        line-height: 1.5;
-        font-weight: 600;
-    }
+  p {
+    line-height: 1.5;
+    font-weight: 600;
+  }
 
-    button{
-        padding: 12px;
-        border: 1px solid #000000;
-        border-radius: 28px;
+  button {
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 28px;
 
-        color: #ffffff;
-        background-color: #000000;
-    }
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
 
-.arrowIcon{
-    width: 1em;
-    height: 1em;
-    fill: #000000;
-    stroke: #000000;
+.arrowIcon {
+  width: 1em;
+  height: 1em;
+  fill: #000000;
+  stroke: #000000;
 }
 
+.imageContainer {
+  display: flex;
+  gap: 30px;
 
-.imageContainer{
-    gap: 32px;
+  overflow: visible;
+  position: relative;
+  right: -20px;
+  picture {
+    transform: rotate(-13deg);
+  }
 
-    picture{
-        transform: rotate(-13.22deg);
-    }
+  picture:last-child {
+    transform: rotate(-13deg) translateY(30px);
+  }
 }
 
-@media screen and (min-width:1440px) {
-    .heroSection{
-        height: 800px;
+@media screen and (min-width: 1440px) {
+  .heroSection {
+    height: 800px;
 
-        h1{
-            font-size: 96px;
-            line-height: 0.9;
-        }
-
-        p{
-            font-size: 16px;
-        }
-
-        .imageContainer{
-            gap: 70px;
-        }
+    h1 {
+      font-size: 96px;
+      line-height: 0.9;
     }
+
+    p {
+      font-size: 16px;
+    }
+
+    .imageContainer {
+      gap: 70px;
+    }
+  }
 }
