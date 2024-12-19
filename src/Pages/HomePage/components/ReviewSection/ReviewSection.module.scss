@@ -6,6 +6,14 @@
   padding-bottom: 80px;
 }
 
+.reviewerItem{
+  width: 300px;
+
+  p{
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .bg {
     height: 700px;
