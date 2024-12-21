@@ -87,11 +87,12 @@ export default function ContactsForm() {
                 <Field
                   className={`bg-transparent border-b-slate-500 border-b-2 w-full outline-none`}
                   as="input"
-                  type="number"
+                  type="tel"
                   name="phone"
                   step={"any"}
                   inputMode="numeric"
                   min="0"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   id={idForPhone}
                   placeholder={`${t("homepage.Contacts.Form.PhoneField")}`}
                   autoComplete={"off"}
