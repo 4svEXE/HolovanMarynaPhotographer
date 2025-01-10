@@ -4,13 +4,14 @@ import heroImage1 from "../../../../images/shared/mobile/hero/hero-image-1.png";
 import heroImage1_2x from "../../../../images/shared/mobile/hero/hero-image-1@2x.png";
 import heroImage1_desktop from "../../../../images/shared/desktop/hero-image-1-desktop.png";
 import heroImage1_desktop_2x from "../../../../images/shared/desktop/hero-image-1-desktop@2x.png";
+import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-desktop.png";
+import heroImage2_desktop_2x from "../../../../images/shared/desktop/hero-image-2-desktop@2x.png";
 import heroImage2 from '../../../../images/shared/mobile/hero/hero-image-2.png';
 import heroImage2_2x from '../../../../images/shared/mobile/hero/hero-image-2@2x.png'
 import heroBgMobile from "../../../../images/shared/mobile/backgrounds/hero-bg-mobile.png";
 import heroBg2xMobile from "../../../../images/shared/mobile/backgrounds/hero-bg-mobile@2x.png";
 import heroBgDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop.png";
 import heroBg2xDesktop from "../../../../images/shared/desktop/backgrounds/hero-bg-desktop@2x.png";
-import heroImage2_desktop from "../../../../images/shared/desktop/hero-image-2-desktop.png";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import RegisterModal from "Components/RegisterModal/RegisterModal";
@@ -87,7 +88,7 @@ const HeroSection = () => {
           <picture className="w-full relative top-right">
             <source
               media="(min-width: 1440px)"
-              srcSet={`${heroImage1_desktop} 1x, ${heroImage1_desktop_2x} 2x`}
+              srcSet={`${heroImage2_desktop} 1x, ${heroImage2_desktop_2x} 2x`}
             />
 
             <img
